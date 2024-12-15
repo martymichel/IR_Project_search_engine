@@ -1,0 +1,12 @@
+2024-12-15 14:32:04,432 - INFO - Scanning directory: G:\OneDrive - Flex\4.3_CAS Information Engineering\1_BD-DWH\DB-1
+2024-12-15 14:32:04,433 - INFO - Found 5 files to process
+2024-12-15 14:32:04,433 - INFO - Processing G:\OneDrive - Flex\4.3_CAS Information Engineering\1_BD-DWH\DB-1\DB-1 2024-09-02_Folien.pdf
+2024-12-15 14:32:04,680 - INFO - Successfully processed: G:\OneDrive - Flex\4.3_CAS Information Engineering\1_BD-DWH\DB-1\DB-1 2024-09-02_Folien.pdf (4058 words)
+2024-12-15 14:32:04,681 - INFO - Processing G:\OneDrive - Flex\4.3_CAS Information Engineering\1_BD-DWH\DB-1\DB-1-A Course in Data Design for Relational Databases.pdf
+2024-12-15 14:32:04,920 - INFO - Successfully processed: G:\OneDrive - Flex\4.3_CAS Information Engineering\1_BD-DWH\DB-1\DB-1-A Course in Data Design for Relational Databases.pdf (14665 words)
+2024-12-15 14:32:04,920 - INFO - Processing G:\OneDrive - Flex\4.3_CAS Information Engineering\1_BD-DWH\DB-1\DB-1-ERM Aufgaben.pdf
+2024-12-15 14:32:04,960 - INFO - Successfully processed: G:\OneDrive - Flex\4.3_CAS Information Engineering\1_BD-DWH\DB-1\DB-1-ERM Aufgaben.pdf (241 words)
+2024-12-15 14:32:04,960 - INFO - Processing G:\OneDrive - Flex\4.3_CAS Information Engineering\1_BD-DWH\DB-1\DB-1-ERM_Loesungen.pdf
+2024-12-15 14:32:04,978 - INFO - Successfully processed: G:\OneDrive - Flex\4.3_CAS Information Engineering\1_BD-DWH\DB-1\DB-1-ERM_Loesungen.pdf (269 words)
+2024-12-15 14:32:04,979 - INFO - Processing G:\OneDrive - Flex\4.3_CAS Information Engineering\1_BD-DWH\DB-1\03_Misc\DB-1-A Course in Data Design for Relational Databases.pdf
+2024-12-15 14:32:05,280 - INFO - Successfully processed: G:\OneDrive - Flex\4.3_CAS Information Engineering\1_BD-DWH\DB-1\03_Misc\DB-1-A Course in Data Design for Relational Databases.pdf (14665 words)
