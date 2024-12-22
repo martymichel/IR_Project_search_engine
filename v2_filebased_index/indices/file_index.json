@@ -1,0 +1,100 @@
+{
+    "1": {
+        "Filename": "01_BigData.pdf",
+        "Path": "C:\\Users\\s.mueller\\GitHub\\IR_Project_search_engine\\v2_filebased_index\\data_small\\01_BigData.pdf",
+        "Author": "Kurt Stockinger",
+        "CreateDate": "2024-12-21 19:22:19",
+        "Pages": 64
+    },
+    "2": {
+        "Filename": "05_Spark_Query_Optimization.pdf",
+        "Path": "C:\\Users\\s.mueller\\GitHub\\IR_Project_search_engine\\v2_filebased_index\\data_small\\05_Spark_Query_Optimization.pdf",
+        "Author": "Kurt Stockinger",
+        "CreateDate": "2024-12-21 19:22:19",
+        "Pages": 48
+    },
+    "3": {
+        "Filename": "DB-2 2024-09-09.pdf",
+        "Path": "C:\\Users\\s.mueller\\GitHub\\IR_Project_search_engine\\v2_filebased_index\\data_small\\DB-2 2024-09-09.pdf",
+        "Author": "Daniel Aebi",
+        "CreateDate": "2024-12-21 19:22:19",
+        "Pages": 78
+    },
+    "4": {
+        "Filename": "DWH-4 2024-11-04.pdf",
+        "Path": "C:\\Users\\s.mueller\\GitHub\\IR_Project_search_engine\\v2_filebased_index\\data_small\\DWH-4 2024-11-04.pdf",
+        "Author": "Daniel Aebi",
+        "CreateDate": "2024-12-21 19:22:19",
+        "Pages": 96
+    },
+    "5": {
+        "Filename": "Teil_4_Evaluation_2.pdf",
+        "Path": "C:\\Users\\s.mueller\\GitHub\\IR_Project_search_engine\\v2_filebased_index\\data_small\\Teil_4_Evaluation_2.pdf",
+        "Author": "Mirco Kocher",
+        "CreateDate": "2024-12-21 19:22:19",
+        "Pages": 23
+    },
+    "6": {
+        "Filename": "ad_lesbiam.txt",
+        "Path": "C:\\Users\\s.mueller\\GitHub\\IR_Project_search_engine\\v2_filebased_index\\data_small\\Sub\\ad_lesbiam.txt",
+        "Author": "Unknown",
+        "CreateDate": "2024-12-21 19:26:37",
+        "Pages": 0
+    },
+    "7": {
+        "Filename": "Day2_020601_List_Comprehension.ipynb",
+        "Path": "C:\\Users\\s.mueller\\GitHub\\IR_Project_search_engine\\v2_filebased_index\\data_small\\Sub\\Day2_020601_List_Comprehension.ipynb",
+        "Author": "Unknown",
+        "CreateDate": "2024-12-21 19:26:17",
+        "Pages": 0
+    },
+    "8": {
+        "Filename": "Day2_0206_List_Additional.ipynb",
+        "Path": "C:\\Users\\s.mueller\\GitHub\\IR_Project_search_engine\\v2_filebased_index\\data_small\\Sub\\Day2_0206_List_Additional.ipynb",
+        "Author": "Unknown",
+        "CreateDate": "2024-12-21 19:26:17",
+        "Pages": 0
+    },
+    "9": {
+        "Filename": "Day2_0207_Dictionaries_Additional.ipynb",
+        "Path": "C:\\Users\\s.mueller\\GitHub\\IR_Project_search_engine\\v2_filebased_index\\data_small\\Sub\\Day2_0207_Dictionaries_Additional.ipynb",
+        "Author": "Unknown",
+        "CreateDate": "2024-12-21 19:26:17",
+        "Pages": 0
+    },
+    "10": {
+        "Filename": "Day3_0101_Recap_Day_02.ipynb",
+        "Path": "C:\\Users\\s.mueller\\GitHub\\IR_Project_search_engine\\v2_filebased_index\\data_small\\Sub\\Day3_0101_Recap_Day_02.ipynb",
+        "Author": "Unknown",
+        "CreateDate": "2024-12-21 19:26:17",
+        "Pages": 0
+    },
+    "11": {
+        "Filename": "Example1.txt",
+        "Path": "C:\\Users\\s.mueller\\GitHub\\IR_Project_search_engine\\v2_filebased_index\\data_small\\Sub\\Example1.txt",
+        "Author": "Unknown",
+        "CreateDate": "2024-12-21 19:26:37",
+        "Pages": 0
+    },
+    "12": {
+        "Filename": "Kreis11_Clustermap_alleUnfaelle.html",
+        "Path": "C:\\Users\\s.mueller\\GitHub\\IR_Project_search_engine\\v2_filebased_index\\data_small\\Sub\\Kreis11_Clustermap_alleUnfaelle.html",
+        "Author": "Unknown",
+        "CreateDate": "2024-12-21 19:28:04",
+        "Pages": 0
+    },
+    "13": {
+        "Filename": "Kreis11_Clustermap_VeloUnfaelle.html",
+        "Path": "C:\\Users\\s.mueller\\GitHub\\IR_Project_search_engine\\v2_filebased_index\\data_small\\Sub\\Kreis11_Clustermap_VeloUnfaelle.html",
+        "Author": "Unknown",
+        "CreateDate": "2024-12-21 19:28:04",
+        "Pages": 0
+    },
+    "14": {
+        "Filename": "Kreis11_HeatMap_alle_Unfaelle.html",
+        "Path": "C:\\Users\\s.mueller\\GitHub\\IR_Project_search_engine\\v2_filebased_index\\data_small\\Sub\\Kreis11_HeatMap_alle_Unfaelle.html",
+        "Author": "Unknown",
+        "CreateDate": "2024-12-21 19:28:04",
+        "Pages": 0
+    }
+}

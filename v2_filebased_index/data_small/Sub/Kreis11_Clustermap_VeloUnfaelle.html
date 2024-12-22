@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_23823397c0ca5260ef3be8c4ecea87fd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_23823397c0ca5260ef3be8c4ecea87fd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_23823397c0ca5260ef3be8c4ecea87fd = L.map(
+                "map_23823397c0ca5260ef3be8c4ecea87fd",
+                {
+                    center: [47.418792488745325, 8.530429483637539],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8b510b6ec911fff720ba6f216bad1459 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_23823397c0ca5260ef3be8c4ecea87fd);
+        
+    
+            var marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88 = L.markerClusterGroup(
+                {}
+            );
+            map_23823397c0ca5260ef3be8c4ecea87fd.addLayer(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var marker_a27202c6a1553d65008d3b77d92d7ec2 = L.marker(
+                [47.4230322872168, 8.548051349100199],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_35f9812f409ecfa7ed3b3e7b5d57c06a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_a27202c6a1553d65008d3b77d92d7ec2.setIcon(icon_35f9812f409ecfa7ed3b3e7b5d57c06a);
+        
+    
+            marker_a27202c6a1553d65008d3b77d92d7ec2.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Montag, Januar, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb8fc2665a197b05e3dd5b405a02dec2 = L.marker(
+                [47.4298388357445, 8.54457438327319],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_f7e4cdbbf497fb71308aa47dea693c29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_eb8fc2665a197b05e3dd5b405a02dec2.setIcon(icon_f7e4cdbbf497fb71308aa47dea693c29);
+        
+    
+            marker_eb8fc2665a197b05e3dd5b405a02dec2.bindTooltip(
+                `<div>
+                     Abbiegeunfall (Montag, Februar, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63f8d6bb7f95f07851b8a69a83813050 = L.marker(
+                [47.414464337072936, 8.553213359557137],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_1319950d10a76a42f0beab47f7c9c526 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_63f8d6bb7f95f07851b8a69a83813050.setIcon(icon_1319950d10a76a42f0beab47f7c9c526);
+        
+    
+            marker_63f8d6bb7f95f07851b8a69a83813050.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Freitag, Februar, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c4181f1c2830d767ef205384cc9c86f = L.marker(
+                [47.423890801076425, 8.502647419673787],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_16ae3487d9612304e9eb987fbbe9cbc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_5c4181f1c2830d767ef205384cc9c86f.setIcon(icon_16ae3487d9612304e9eb987fbbe9cbc7);
+        
+    
+            marker_5c4181f1c2830d767ef205384cc9c86f.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Samstag, Februar, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_967d91ac9d2bb4bb7c7892147726edc5 = L.marker(
+                [47.41374753023042, 8.545432901314584],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_8a0a91d48c1555b8e03102df3c3f0f41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_967d91ac9d2bb4bb7c7892147726edc5.setIcon(icon_8a0a91d48c1555b8e03102df3c3f0f41);
+        
+    
+            marker_967d91ac9d2bb4bb7c7892147726edc5.bindTooltip(
+                `<div>
+                     Abbiegeunfall (Samstag, Februar, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42bc3f5b66f61056a9d446e1243df218 = L.marker(
+                [47.41195399489533, 8.528765427382334],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_57590f4230d795f633d7542b1d74d8e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_42bc3f5b66f61056a9d446e1243df218.setIcon(icon_57590f4230d795f633d7542b1d74d8e0);
+        
+    
+            marker_42bc3f5b66f61056a9d446e1243df218.bindTooltip(
+                `<div>
+                     Auffahrunfall (Freitag, März, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd306b83ddc7e64556a251c154dad05a = L.marker(
+                [47.41413285302011, 8.518964031839152],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_f6afa6efb3774c932cca870234527c2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_bd306b83ddc7e64556a251c154dad05a.setIcon(icon_f6afa6efb3774c932cca870234527c2d);
+        
+    
+            marker_bd306b83ddc7e64556a251c154dad05a.bindTooltip(
+                `<div>
+                     Abbiegeunfall (Dienstag, April, Nachmittag)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a66b379ea21b3f3be9643d8f0295509 = L.marker(
+                [47.42656746142538, 8.544281106355296],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_675e4b42fab1e994bf5831af7dcbb446 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_1a66b379ea21b3f3be9643d8f0295509.setIcon(icon_675e4b42fab1e994bf5831af7dcbb446);
+        
+    
+            marker_1a66b379ea21b3f3be9643d8f0295509.bindTooltip(
+                `<div>
+                     Frontalkollision (Donnerstag, April, Nachmittag)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7cdc3996451e2b6e05da52336961b744 = L.marker(
+                [47.41116905866961, 8.526152178184919],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_566bf4176ee75a44efa909498da89c5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_7cdc3996451e2b6e05da52336961b744.setIcon(icon_566bf4176ee75a44efa909498da89c5d);
+        
+    
+            marker_7cdc3996451e2b6e05da52336961b744.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Freitag, April, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_023aa6ebda363749757b5708bf6a22be = L.marker(
+                [47.41344274501286, 8.530187306691973],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_6fd99c9286ce106a8ca45ce1d15cda7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_023aa6ebda363749757b5708bf6a22be.setIcon(icon_6fd99c9286ce106a8ca45ce1d15cda7d);
+        
+    
+            marker_023aa6ebda363749757b5708bf6a22be.bindTooltip(
+                `<div>
+                     Abbiegeunfall (Mittwoch, April, Rushhour_Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a79ea7912f2de27e1c6b4faf3a2cf626 = L.marker(
+                [47.40683481495042, 8.550589234089372],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_fee68bb3fa113492984f302be2c3fbaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_a79ea7912f2de27e1c6b4faf3a2cf626.setIcon(icon_fee68bb3fa113492984f302be2c3fbaf);
+        
+    
+            marker_a79ea7912f2de27e1c6b4faf3a2cf626.bindTooltip(
+                `<div>
+                     Abbiegeunfall (Donnerstag, April, Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c45e4d38833719fdbf9d1ec51e83d17e = L.marker(
+                [47.43055747530178, 8.547492333397297],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_aa1b083dea19423683a4d09c889670b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_c45e4d38833719fdbf9d1ec51e83d17e.setIcon(icon_aa1b083dea19423683a4d09c889670b2);
+        
+    
+            marker_c45e4d38833719fdbf9d1ec51e83d17e.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Samstag, April, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c6eb1b4a89aba4606e60296568356f8 = L.marker(
+                [47.40687078799954, 8.550589985016503],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_bc3ee8800b00ad833c40aef3bf9e1276 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_5c6eb1b4a89aba4606e60296568356f8.setIcon(icon_bc3ee8800b00ad833c40aef3bf9e1276);
+        
+    
+            marker_5c6eb1b4a89aba4606e60296568356f8.bindTooltip(
+                `<div>
+                     Abbiegeunfall (Montag, April, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d40947b59cccdd5fbb3f516b6396e18a = L.marker(
+                [47.42104788433002, 8.549560662381829],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_a2b1720867ec65dccd2aaf71fe2ed0ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_d40947b59cccdd5fbb3f516b6396e18a.setIcon(icon_a2b1720867ec65dccd2aaf71fe2ed0ea);
+        
+    
+            marker_d40947b59cccdd5fbb3f516b6396e18a.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Samstag, Mai, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4cfd19cf96520f5b3e4b4bdcd186d0bf = L.marker(
+                [47.428006057064856, 8.490349421579175],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_66c3122204fb3013c3f9382726dee7d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_4cfd19cf96520f5b3e4b4bdcd186d0bf.setIcon(icon_66c3122204fb3013c3f9382726dee7d6);
+        
+    
+            marker_4cfd19cf96520f5b3e4b4bdcd186d0bf.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Sonntag, Mai, Nachmittag)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18917e29507fd7b9ea7daee7d3cfb362 = L.marker(
+                [47.40651186800199, 8.55609442725055],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_d85919a977990906c2d353e003f10275 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_18917e29507fd7b9ea7daee7d3cfb362.setIcon(icon_d85919a977990906c2d353e003f10275);
+        
+    
+            marker_18917e29507fd7b9ea7daee7d3cfb362.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Montag, Mai, Rushhour_Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5bb55203fc14d371b39623b4e6758ad9 = L.marker(
+                [47.418792488745325, 8.530429483637539],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_92f8077f1be44a07af0aa24b210ad692 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_5bb55203fc14d371b39623b4e6758ad9.setIcon(icon_92f8077f1be44a07af0aa24b210ad692);
+        
+    
+            marker_5bb55203fc14d371b39623b4e6758ad9.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Samstag, Mai, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_328a4b7ec79d1613ce005c7c08fa43b6 = L.marker(
+                [47.41724515158132, 8.522804108274059],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_47400542b3fe25ea4053bbe2943a9638 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_328a4b7ec79d1613ce005c7c08fa43b6.setIcon(icon_47400542b3fe25ea4053bbe2943a9638);
+        
+    
+            marker_328a4b7ec79d1613ce005c7c08fa43b6.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Sonntag, Mai, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40be84ee91a242f93f8ee5df0678d0f6 = L.marker(
+                [47.41037499866072, 8.5397179909461],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_580371af684e8ddefcc16fc1808b4215 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_40be84ee91a242f93f8ee5df0678d0f6.setIcon(icon_580371af684e8ddefcc16fc1808b4215);
+        
+    
+            marker_40be84ee91a242f93f8ee5df0678d0f6.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Donnerstag, Mai, Nacht)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_accbad8bdd7effc1f9f0a08a2c53f66b = L.marker(
+                [47.405581364028, 8.549980086736683],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_fbf1365453b1fb943452eb1071ac335d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_accbad8bdd7effc1f9f0a08a2c53f66b.setIcon(icon_fbf1365453b1fb943452eb1071ac335d);
+        
+    
+            marker_accbad8bdd7effc1f9f0a08a2c53f66b.bindTooltip(
+                `<div>
+                     Abbiegeunfall (Sonntag, Mai, Nachmittag)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49516a9339c51e0f2f375be96eee66e8 = L.marker(
+                [47.41964068218448, 8.555574725407391],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_56484e1694b44d59b5d756aa33c4e7e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_49516a9339c51e0f2f375be96eee66e8.setIcon(icon_56484e1694b44d59b5d756aa33c4e7e7);
+        
+    
+            marker_49516a9339c51e0f2f375be96eee66e8.bindTooltip(
+                `<div>
+                     Einbiegeunfall (Mittwoch, Mai, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53765e05d85f91ec27492a081de0ba50 = L.marker(
+                [47.41180482248178, 8.512993584332689],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_45a85c98fc8c57899d5d1a0fe0785681 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_53765e05d85f91ec27492a081de0ba50.setIcon(icon_45a85c98fc8c57899d5d1a0fe0785681);
+        
+    
+            marker_53765e05d85f91ec27492a081de0ba50.bindTooltip(
+                `<div>
+                     Überqueren der Fahrbahn (Samstag, Mai, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b79f10b6fb37a01e7e31ba3dd3b236bc = L.marker(
+                [47.4068616672897, 8.550603044547378],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_0f7ae7cf0345bc539e4fa121125430ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_b79f10b6fb37a01e7e31ba3dd3b236bc.setIcon(icon_0f7ae7cf0345bc539e4fa121125430ec);
+        
+    
+            marker_b79f10b6fb37a01e7e31ba3dd3b236bc.bindTooltip(
+                `<div>
+                     Abbiegeunfall (Dienstag, Juni, Rushhour_Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc9edcdc0e8bcd23634e314b9c765a87 = L.marker(
+                [47.40681695587172, 8.550575611374564],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_3b5f79271727199b0980510b522ada5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_dc9edcdc0e8bcd23634e314b9c765a87.setIcon(icon_3b5f79271727199b0980510b522ada5b);
+        
+    
+            marker_dc9edcdc0e8bcd23634e314b9c765a87.bindTooltip(
+                `<div>
+                     Abbiegeunfall (Mittwoch, Juni, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c7d368e0923c63381be80cfedae5824 = L.marker(
+                [47.42170089715472, 8.550873139583983],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_618b57f1b649ac60e6b6f16835b56ebb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_2c7d368e0923c63381be80cfedae5824.setIcon(icon_618b57f1b649ac60e6b6f16835b56ebb);
+        
+    
+            marker_2c7d368e0923c63381be80cfedae5824.bindTooltip(
+                `<div>
+                     Frontalkollision (Sonntag, Juni, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3221f1c65ef3210bf710a54bba3bfd4 = L.marker(
+                [47.414637868330495, 8.542628760675347],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_22f41e2121ddd0eb92fd960d9cf9d1ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_e3221f1c65ef3210bf710a54bba3bfd4.setIcon(icon_22f41e2121ddd0eb92fd960d9cf9d1ac);
+        
+    
+            marker_e3221f1c65ef3210bf710a54bba3bfd4.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Dienstag, Juni, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6cd6baabc1a9995cab20d527cbabde1d = L.marker(
+                [47.425654045501226, 8.509442445631981],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_a4a780bb0788488310034f298f2ffccd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_6cd6baabc1a9995cab20d527cbabde1d.setIcon(icon_a4a780bb0788488310034f298f2ffccd);
+        
+    
+            marker_6cd6baabc1a9995cab20d527cbabde1d.bindTooltip(
+                `<div>
+                     Überqueren der Fahrbahn (Freitag, Juni, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41ec813c0affe660e90f61dd6000d0d7 = L.marker(
+                [47.41409889190256, 8.541610459194798],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_956255ffb6b70091086fa1b061f4ffdf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_41ec813c0affe660e90f61dd6000d0d7.setIcon(icon_956255ffb6b70091086fa1b061f4ffdf);
+        
+    
+            marker_41ec813c0affe660e90f61dd6000d0d7.bindTooltip(
+                `<div>
+                     Abbiegeunfall (Mittwoch, Juli, Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02285c5590817bc064518a1eb66a3ed6 = L.marker(
+                [47.409234786783216, 8.537600844455243],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_c785255bf9674346d6a2c48f4f5d7b4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_02285c5590817bc064518a1eb66a3ed6.setIcon(icon_c785255bf9674346d6a2c48f4f5d7b4d);
+        
+    
+            marker_02285c5590817bc064518a1eb66a3ed6.bindTooltip(
+                `<div>
+                     Überholunfall oder Fahrstreifenwechsel (Mittwoch, Juli, Rushhour_Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e94fa32bee0eb4ab292c259e00e36ebb = L.marker(
+                [47.41262801462616, 8.512493388993171],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_b8e6976c9f37685cb53358fdc669caac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_e94fa32bee0eb4ab292c259e00e36ebb.setIcon(icon_b8e6976c9f37685cb53358fdc669caac);
+        
+    
+            marker_e94fa32bee0eb4ab292c259e00e36ebb.bindTooltip(
+                `<div>
+                     Fussgängerunfall (Mittwoch, Juli, Nachmittag)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_553aeef50dfe96eb801385101f25c858 = L.marker(
+                [47.41051942795914, 8.55000361301254],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_3e665b23a23ffbaecdb5fd8e52c3088f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_553aeef50dfe96eb801385101f25c858.setIcon(icon_3e665b23a23ffbaecdb5fd8e52c3088f);
+        
+    
+            marker_553aeef50dfe96eb801385101f25c858.bindTooltip(
+                `<div>
+                     Überqueren der Fahrbahn (Freitag, Juli, Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_151c849dd9ee4e3e180d6c61b0fc178c = L.marker(
+                [47.425716800337256, 8.52680715792555],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_00b96af5ea2d88f6f6bfdca1882f5d1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_151c849dd9ee4e3e180d6c61b0fc178c.setIcon(icon_00b96af5ea2d88f6f6bfdca1882f5d1d);
+        
+    
+            marker_151c849dd9ee4e3e180d6c61b0fc178c.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Freitag, Juli, Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6fdccce1c8cb3596a6d9687e6a18442 = L.marker(
+                [47.414394151631925, 8.537998839717122],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_6b69c64d6ba7aa936aaf6078ebed0d12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_b6fdccce1c8cb3596a6d9687e6a18442.setIcon(icon_6b69c64d6ba7aa936aaf6078ebed0d12);
+        
+    
+            marker_b6fdccce1c8cb3596a6d9687e6a18442.bindTooltip(
+                `<div>
+                     Überqueren der Fahrbahn (Mittwoch, Juli, Nachmittag)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cbedea001eb1fd6444474bdbb2638b8f = L.marker(
+                [47.41085775808853, 8.546618438759468],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_dfb5a850150cf1ec981f71ceff7ccbfe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_cbedea001eb1fd6444474bdbb2638b8f.setIcon(icon_dfb5a850150cf1ec981f71ceff7ccbfe);
+        
+    
+            marker_cbedea001eb1fd6444474bdbb2638b8f.bindTooltip(
+                `<div>
+                     Parkierunfall (Donnerstag, Juli, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f262b4eef8ad578eb028518e6a357139 = L.marker(
+                [47.417389741112174, 8.553937210702664],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_2920e6cf7f81186f172d8719e931547a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_f262b4eef8ad578eb028518e6a357139.setIcon(icon_2920e6cf7f81186f172d8719e931547a);
+        
+    
+            marker_f262b4eef8ad578eb028518e6a357139.bindTooltip(
+                `<div>
+                     Einbiegeunfall (Donnerstag, August, Rushhour_Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95df017d65d48ec389b6c95af212b2b2 = L.marker(
+                [47.42194978514578, 8.538963291609447],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_646e22e08fd3b068c3f3afcf3914b3a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_95df017d65d48ec389b6c95af212b2b2.setIcon(icon_646e22e08fd3b068c3f3afcf3914b3a1);
+        
+    
+            marker_95df017d65d48ec389b6c95af212b2b2.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Freitag, August, Rushhour_Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d12b55f8358aeecc810c325eb7b2fe5d = L.marker(
+                [47.40817100764674, 8.556606243269815],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_7d9882d4265617f084ae3981c1487dac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_d12b55f8358aeecc810c325eb7b2fe5d.setIcon(icon_7d9882d4265617f084ae3981c1487dac);
+        
+    
+            marker_d12b55f8358aeecc810c325eb7b2fe5d.bindTooltip(
+                `<div>
+                     Abbiegeunfall (Freitag, August, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a25e38768afa16658a2ffee401b58dff = L.marker(
+                [47.41497973224518, 8.545445255845008],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_1f0a4f179f5d166342cc40b916c115f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_a25e38768afa16658a2ffee401b58dff.setIcon(icon_1f0a4f179f5d166342cc40b916c115f3);
+        
+    
+            marker_a25e38768afa16658a2ffee401b58dff.bindTooltip(
+                `<div>
+                     Überqueren der Fahrbahn (Sonntag, August, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51d05e2d7386fd03b7340cffb1679eba = L.marker(
+                [47.41629553665781, 8.54518105094373],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_52a53a35e20d477277d1ecd28bd48f87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_51d05e2d7386fd03b7340cffb1679eba.setIcon(icon_52a53a35e20d477277d1ecd28bd48f87);
+        
+    
+            marker_51d05e2d7386fd03b7340cffb1679eba.bindTooltip(
+                `<div>
+                     Überqueren der Fahrbahn (Dienstag, August, Rushhour_Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93b83af4cebdf6db56a7176f62991112 = L.marker(
+                [47.42312470559453, 8.53837788720244],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_77985f0287925d990ad0033e0b70804b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_93b83af4cebdf6db56a7176f62991112.setIcon(icon_77985f0287925d990ad0033e0b70804b);
+        
+    
+            marker_93b83af4cebdf6db56a7176f62991112.bindTooltip(
+                `<div>
+                     Überqueren der Fahrbahn (Mittwoch, September, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3903bd7badbb0067213ded9153ea338c = L.marker(
+                [47.40914901205628, 8.547523679474898],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_f20c2c0862bd9831e95defe04f515aa3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_3903bd7badbb0067213ded9153ea338c.setIcon(icon_f20c2c0862bd9831e95defe04f515aa3);
+        
+    
+            marker_3903bd7badbb0067213ded9153ea338c.bindTooltip(
+                `<div>
+                     Parkierunfall (Freitag, September, Nachmittag)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af90fb14bffa9870a419c639bde248a7 = L.marker(
+                [47.40483627081158, 8.550759507370898],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_22ed1c68135928e31aa75ae04cdfd921 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_af90fb14bffa9870a419c639bde248a7.setIcon(icon_22ed1c68135928e31aa75ae04cdfd921);
+        
+    
+            marker_af90fb14bffa9870a419c639bde248a7.bindTooltip(
+                `<div>
+                     Auffahrunfall (Mittwoch, September, Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cff7441e65c2d7f89ae4307c257748de = L.marker(
+                [47.41294371593665, 8.538233930080773],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_49fb91f5f010e08e8ab12bbc1b175efb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_cff7441e65c2d7f89ae4307c257748de.setIcon(icon_49fb91f5f010e08e8ab12bbc1b175efb);
+        
+    
+            marker_cff7441e65c2d7f89ae4307c257748de.bindTooltip(
+                `<div>
+                     Einbiegeunfall (Freitag, September, Nachmittag)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_949281f8f4ee1e546a6eeddeef680140 = L.marker(
+                [47.41364841496523, 8.524586112597603],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_fb0b9c0124b46d0721475e34f7c71779 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_949281f8f4ee1e546a6eeddeef680140.setIcon(icon_fb0b9c0124b46d0721475e34f7c71779);
+        
+    
+            marker_949281f8f4ee1e546a6eeddeef680140.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Sonntag, September, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e6bf0dbbf35a4298af974e4f3ffb708 = L.marker(
+                [47.41388280955372, 8.545395957526964],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_6eef183dc9088199f197c5650e3d948a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_4e6bf0dbbf35a4298af974e4f3ffb708.setIcon(icon_6eef183dc9088199f197c5650e3d948a);
+        
+    
+            marker_4e6bf0dbbf35a4298af974e4f3ffb708.bindTooltip(
+                `<div>
+                     Überqueren der Fahrbahn (Dienstag, September, Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83a85e1955d744df72f066bffd04b6f8 = L.marker(
+                [47.40627778223469, 8.541130522740998],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_1fddf87cf6f4dce4107f1cb61c1275e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_83a85e1955d744df72f066bffd04b6f8.setIcon(icon_1fddf87cf6f4dce4107f1cb61c1275e9);
+        
+    
+            marker_83a85e1955d744df72f066bffd04b6f8.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Donnerstag, September, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8d8cc8c0c64d97a243d4847f154725d = L.marker(
+                [47.40984506130118, 8.549976291750673],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_81cdb31785d2c29a18adee7413f58fcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_d8d8cc8c0c64d97a243d4847f154725d.setIcon(icon_81cdb31785d2c29a18adee7413f58fcc);
+        
+    
+            marker_d8d8cc8c0c64d97a243d4847f154725d.bindTooltip(
+                `<div>
+                     Abbiegeunfall (Donnerstag, September, Rushhour_Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81caf6827d477363902cbc0403e93608 = L.marker(
+                [47.40724983001096, 8.549524645971367],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_4059f118dcf9468f32b921a44312e41a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_81caf6827d477363902cbc0403e93608.setIcon(icon_4059f118dcf9468f32b921a44312e41a);
+        
+    
+            marker_81caf6827d477363902cbc0403e93608.bindTooltip(
+                `<div>
+                     Abbiegeunfall (Mittwoch, September, Rushhour_Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a37e0760b8ada34d4fc5b8887f6dd1cc = L.marker(
+                [47.41696433301004, 8.538250679867392],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_7e4b772fa558ed1ac786fc17f14f7959 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_a37e0760b8ada34d4fc5b8887f6dd1cc.setIcon(icon_7e4b772fa558ed1ac786fc17f14f7959);
+        
+    
+            marker_a37e0760b8ada34d4fc5b8887f6dd1cc.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Donnerstag, Oktober, Nachmittag)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bf2c9f14cddfbbab7b44519193656e3 = L.marker(
+                [47.40817243153017, 8.547119092368003],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_37aeb3eaf57bd1cbcf33e1d6256c059c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_9bf2c9f14cddfbbab7b44519193656e3.setIcon(icon_37aeb3eaf57bd1cbcf33e1d6256c059c);
+        
+    
+            marker_9bf2c9f14cddfbbab7b44519193656e3.bindTooltip(
+                `<div>
+                     Parkierunfall (Montag, Oktober, Nachmittag)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aacc98ff6e022905292fa7066407b929 = L.marker(
+                [47.41408803458212, 8.551191222339988],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_723f1024632604aa9abfee3af2406587 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_aacc98ff6e022905292fa7066407b929.setIcon(icon_723f1024632604aa9abfee3af2406587);
+        
+    
+            marker_aacc98ff6e022905292fa7066407b929.bindTooltip(
+                `<div>
+                     Abbiegeunfall (Montag, Oktober, Rushhour_Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1fecf8f6e0d5a8b5ceb3086fa4f3d368 = L.marker(
+                [47.40682582168808, 8.550589046357747],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_a88196fe1f4a2a56b7297d7cb10653b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_1fecf8f6e0d5a8b5ceb3086fa4f3d368.setIcon(icon_a88196fe1f4a2a56b7297d7cb10653b2);
+        
+    
+            marker_1fecf8f6e0d5a8b5ceb3086fa4f3d368.bindTooltip(
+                `<div>
+                     Abbiegeunfall (Dienstag, Oktober, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e5fcfa191e19fd234d20e1b53c76ace = L.marker(
+                [47.41977559538572, 8.548102783201458],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_c0df06bb7809b7b485ee8cb939adb0dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_7e5fcfa191e19fd234d20e1b53c76ace.setIcon(icon_c0df06bb7809b7b485ee8cb939adb0dd);
+        
+    
+            marker_7e5fcfa191e19fd234d20e1b53c76ace.bindTooltip(
+                `<div>
+                     Fussgängerunfall (Samstag, Oktober, Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_721eca13d4dd3a34a325744919b53ac1 = L.marker(
+                [47.40953005329743, 8.537765942990989],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_72d8379794fe06f27496b962df8d4cb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_721eca13d4dd3a34a325744919b53ac1.setIcon(icon_72d8379794fe06f27496b962df8d4cb0);
+        
+    
+            marker_721eca13d4dd3a34a325744919b53ac1.bindTooltip(
+                `<div>
+                     Abbiegeunfall (Freitag, Oktober, Rushhour_Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2e259c10355282da2369af74232225b = L.marker(
+                [47.41163260191338, 8.542725483489985],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_f0484cfff715d7a0bec5176345b81f60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_a2e259c10355282da2369af74232225b.setIcon(icon_f0484cfff715d7a0bec5176345b81f60);
+        
+    
+            marker_a2e259c10355282da2369af74232225b.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Freitag, Oktober, Rushhour_Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1cfc70c42d8dac6c179e7bd54843931 = L.marker(
+                [47.41718333753576, 8.542641768873905],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_62303239c89a1402873f92ea32b0b9dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_a1cfc70c42d8dac6c179e7bd54843931.setIcon(icon_62303239c89a1402873f92ea32b0b9dc);
+        
+    
+            marker_a1cfc70c42d8dac6c179e7bd54843931.bindTooltip(
+                `<div>
+                     Frontalkollision (Montag, Oktober, Rushhour_Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb260ffa36322951dffba33a8139c523 = L.marker(
+                [47.42588568126448, 8.555321335242867],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_526bd4746740a59b27404c5a6ae490d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_fb260ffa36322951dffba33a8139c523.setIcon(icon_526bd4746740a59b27404c5a6ae490d5);
+        
+    
+            marker_fb260ffa36322951dffba33a8139c523.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Dienstag, Oktober, Rushhour_Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9cbb5df19b46e02c6fd709b36c9affb = L.marker(
+                [47.4129568673478, 8.537796905033495],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_85dafe91e2f3fc67e1030b1297a7f6d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_a9cbb5df19b46e02c6fd709b36c9affb.setIcon(icon_85dafe91e2f3fc67e1030b1297a7f6d0);
+        
+    
+            marker_a9cbb5df19b46e02c6fd709b36c9affb.bindTooltip(
+                `<div>
+                     Überqueren der Fahrbahn (Montag, November, Nachmittag)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c44e644c3dd94fbc2bc347e2f3c03443 = L.marker(
+                [47.41107932976593, 8.543204300252695],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_93addad643e716b2aac1035d66888fd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_c44e644c3dd94fbc2bc347e2f3c03443.setIcon(icon_93addad643e716b2aac1035d66888fd9);
+        
+    
+            marker_c44e644c3dd94fbc2bc347e2f3c03443.bindTooltip(
+                `<div>
+                     Fussgängerunfall (Donnerstag, November, Nachmittag)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8bb00f2373d261d7fcc78bd4b06cbb50 = L.marker(
+                [47.40564093276392, 8.54282654044582],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_13d33df65f7826e03f12970854a0e49e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_8bb00f2373d261d7fcc78bd4b06cbb50.setIcon(icon_13d33df65f7826e03f12970854a0e49e);
+        
+    
+            marker_8bb00f2373d261d7fcc78bd4b06cbb50.bindTooltip(
+                `<div>
+                     Einbiegeunfall (Freitag, November, Nachmittag)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca383dfed58ee95eb17aacf2120dc9f8 = L.marker(
+                [47.41287814240314, 8.522317677203137],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_590fe8680de229cb1f4c2e4dbe64be28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_ca383dfed58ee95eb17aacf2120dc9f8.setIcon(icon_590fe8680de229cb1f4c2e4dbe64be28);
+        
+    
+            marker_ca383dfed58ee95eb17aacf2120dc9f8.bindTooltip(
+                `<div>
+                     Überholunfall oder Fahrstreifenwechsel (Freitag, November, Rushhour_Abend)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f2b13c2adce011dc5a42c82b660217c = L.marker(
+                [47.41918509358008, 8.547772409675423],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_db9f45b603689864c0041b3f4880b72f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_2f2b13c2adce011dc5a42c82b660217c.setIcon(icon_db9f45b603689864c0041b3f4880b72f);
+        
+    
+            marker_2f2b13c2adce011dc5a42c82b660217c.bindTooltip(
+                `<div>
+                     Überholunfall oder Fahrstreifenwechsel (Donnerstag, Dezember, Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0d1d0ff761a4c7f4a6a7deae1e9be0f = L.marker(
+                [47.41132784699043, 8.544494802779333],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_add6805834a8d2ec073d4e113005b725 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_e0d1d0ff761a4c7f4a6a7deae1e9be0f.setIcon(icon_add6805834a8d2ec073d4e113005b725);
+        
+    
+            marker_e0d1d0ff761a4c7f4a6a7deae1e9be0f.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Montag, Dezember, Rushhour_Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6fba34ca0ad1b8a139a4025db5d09c4 = L.marker(
+                [47.40824108326228, 8.552142371173003],
+                {}
+            ).addTo(marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88);
+        
+    
+            var icon_0844989ce64a41cc0477b200404d7fcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_c6fba34ca0ad1b8a139a4025db5d09c4.setIcon(icon_0844989ce64a41cc0477b200404d7fcc);
+        
+    
+            marker_c6fba34ca0ad1b8a139a4025db5d09c4.bindTooltip(
+                `<div>
+                     Schleuder- oder Selbstunfall (Dienstag, Dezember, Rushhour_Morgen)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var choropleth_a35e976dc42db1e8b20fce0b98979db7 = L.featureGroup(
+                {}
+            ).addTo(map_23823397c0ca5260ef3be8c4ecea87fd);
+        
+    
+        function geo_json_e0ff5bfdfe5decb4adfa578e98fdfb48_styler(feature) {
+            switch(feature.properties.objectid) {
+                case 20: 
+                    return {"color": "black", "fillColor": "#252525", "fillOpacity": 0.7, "opacity": 1, "weight": 1};
+                case 27: 
+                    return {"color": "black", "fillColor": "#bdbdbd", "fillOpacity": 0.7, "opacity": 1, "weight": 1};
+                default:
+                    return {"color": "black", "fillColor": "#f7f7f7", "fillOpacity": 0.7, "opacity": 1, "weight": 1};
+            }
+        }
+
+        function geo_json_e0ff5bfdfe5decb4adfa578e98fdfb48_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_e0ff5bfdfe5decb4adfa578e98fdfb48 = L.geoJson(null, {
+                onEachFeature: geo_json_e0ff5bfdfe5decb4adfa578e98fdfb48_onEachFeature,
+            
+                style: geo_json_e0ff5bfdfe5decb4adfa578e98fdfb48_styler,
+        });
+
+        function geo_json_e0ff5bfdfe5decb4adfa578e98fdfb48_add (data) {
+            geo_json_e0ff5bfdfe5decb4adfa578e98fdfb48
+                .addData(data)
+                .addTo(choropleth_a35e976dc42db1e8b20fce0b98979db7);
+        }
+            geo_json_e0ff5bfdfe5decb4adfa578e98fdfb48_add({"crs": {"properties": {"name": "urn:ogc:def:crs:OGC:1.3:CRS84"}, "type": "name"}, "features": [{"geometry": {"coordinates": [[[8.5474636585, 47.3993834672], [8.5479374613, 47.3991653921], [8.5479683256, 47.3991486798], [8.5480077461, 47.3991801484], [8.5480473899, 47.3992113352], [8.548087255, 47.3992422387], [8.5481276808, 47.3992731161], [8.5481683275, 47.399303702], [8.5482091931, 47.3993339949], [8.5482506184, 47.3993642584], [8.5482922514, 47.3993942356], [8.5483340899, 47.3994239251], [8.5483764807, 47.3994535675], [8.5484190764, 47.3994829146], [8.548461875, 47.399511965], [8.5485052816, 47.3995408441], [8.548548805, 47.3995695468], [8.5485924445, 47.3995980727], [8.5486364119, 47.3996265584], [8.548680495, 47.3996548647], [8.5487246931, 47.399682991], [8.548769219, 47.3997110756], [8.5488138568, 47.3997389821], [8.5488586058, 47.3997667099], [8.5489036791, 47.3997943893], [8.5489488632, 47.3998218875], [8.5489941573, 47.3998492041], [8.5490172691, 47.3998633187], [8.5490406003, 47.3998770676], [8.5490641452, 47.3998904474], [8.5490883447, 47.3999036949], [8.5491127537, 47.3999165525], [8.5491373658, 47.3999290168], [8.5491534464, 47.3999369131], [8.5491696018, 47.3999446551], [8.5491858308, 47.3999522418], [8.5492023068, 47.3999597516], [8.5492188548, 47.3999671015], [8.5492354732, 47.3999742907], [8.5492449458, 47.3999783052], [8.5492544391, 47.3999822707], [8.5492639527, 47.3999861872], [8.5492735384, 47.3999900756], [8.5492831441, 47.3999939142], [8.5492927696, 47.399997703], [8.5494074649, 47.40004556], [8.5493988162, 47.4001231367], [8.5497430457, 47.4003236913], [8.5497847072, 47.4003480411], [8.5498263134, 47.4003724851], [8.5498678642, 47.4003970234], [8.5499092487, 47.4004215899], [8.5499505776, 47.4004462499], [8.5499918507, 47.4004710032], [8.5500230617, 47.4004897928], [8.5500542396, 47.4005086374], [8.5500853842, 47.4005275368], [8.5501164307, 47.4005464517], [8.5501474439, 47.400565421], [8.5501784238, 47.4005844449], [8.550188248, 47.4005905138], [8.5501980692, 47.4005965875], [8.5502078874, 47.4006026661], [8.5502176969, 47.400608746], [8.5502275033, 47.4006148307], [8.5502373067, 47.4006209203], [8.5502612131, 47.4006357811], [8.5502850893, 47.4006506904], [8.550308935, 47.4006656482], [8.5503326931, 47.4006806183], [8.5503564207, 47.4006956365], [8.5503801178, 47.4007107028], [8.5504037343, 47.4007257814], [8.5504273193, 47.4007409092], [8.5504508728, 47.400756086], [8.5504743367, 47.4007712741], [8.5504977689, 47.400786511], [8.5505211695, 47.4008017964], [8.5506879827, 47.4009110108], [8.5507049811, 47.4009221277], [8.5507219858, 47.4009332349], [8.5507389968, 47.4009443326], [8.5507560255, 47.4009554281], [8.5507730605, 47.400966514], [8.5507901018, 47.4009775902], [8.5508071632, 47.4009886599], [8.5508242322, 47.4009997179], [8.5508413087, 47.4010107641], [8.5508584067, 47.4010218077], [8.5508755123, 47.4010328396], [8.5508926255, 47.4010438598], [8.550950358, 47.4010805968], [8.5510084464, 47.4011167687], [8.5510668851, 47.4011523719], [8.5511263568, 47.4011878086], [8.5511861755, 47.4012226564], [8.5512463353, 47.4012569118], [8.5513075019, 47.4012909721], [8.5513689836, 47.4013244603], [8.551430775, 47.4013573736], [8.5514935478, 47.4013900575], [8.5515566259, 47.4014221481], [8.5516200038, 47.4014536425], [8.551901937, 47.401591888], [8.5520144348, 47.4015869364], [8.5520154979, 47.401592608], [8.5520170882, 47.4015981548], [8.5520191919, 47.401603528], [8.5520219822, 47.4016090176], [8.552025308, 47.4016142003], [8.5520291357, 47.4016190242], [8.5520336211, 47.4016238267], [8.5520384159, 47.4016283203], [8.5520434988, 47.4016324852], [8.5520493149, 47.4016366117], [8.5520554136, 47.4016403078], [8.5520617631, 47.4016435543], [8.552316524, 47.4017671558], [8.5523437622, 47.4017807782], [8.5523708268, 47.4017947422], [8.5523977136, 47.4018090455], [8.5524240356, 47.4018234731], [8.5524501766, 47.4018382259], [8.5524761326, 47.4018533017], [8.5524883788, 47.401860576], [8.5525005792, 47.4018679268], [8.5525127333, 47.4018753539], [8.5525247516, 47.4018828015], [8.5525367234, 47.4018903236], [8.5525486482, 47.40189792], [8.5526602877, 47.4017804286], [8.553329749, 47.4010756263], [8.5537975165, 47.4008631803], [8.5544415413, 47.4005706106], [8.554452552, 47.400565611], [8.5544968423, 47.4005454211], [8.5545347174, 47.4004764489], [8.5547200227, 47.4006628458], [8.5548564445, 47.400799513], [8.5549925908, 47.4009362096], [8.555128805, 47.4010729504], [8.5552649392, 47.4012096378], [8.555428856, 47.4013741123], [8.555619614, 47.4012865896], [8.55581197, 47.4016028687], [8.5558304876, 47.4016323735], [8.5561071666, 47.4019792388], [8.5562761757, 47.4021474318], [8.5564679212, 47.4023384321], [8.556790497, 47.4025897998], [8.5568040721, 47.4025964879], [8.5568176922, 47.4026030837], [8.5568313568, 47.402609587], [8.5568451701, 47.4026160459], [8.5568590272, 47.4026224102], [8.5568729275, 47.4026286795], [8.5568935318, 47.4026375802], [8.5569142195, 47.4026462851], [8.5569349887, 47.4026547935], [8.5569560471, 47.402663187], [8.5569771848, 47.4026713784], [8.5569984, 47.4026793671], [8.5573448007, 47.4028095997], [8.5573888381, 47.4029223676], [8.5573772987, 47.4029967698], [8.557327817, 47.4033096671], [8.5572987182, 47.4034929548], [8.5572861036, 47.4035307393], [8.5572298236, 47.4036992502], [8.5563337664, 47.4034656754], [8.5559612166, 47.4035314986], [8.5558564627, 47.4035501416], [8.5558813311, 47.4035690877], [8.5562345382, 47.4038371804], [8.5562454053, 47.4038455217], [8.5562685918, 47.4038637401], [8.5562914301, 47.4038823931], [8.556313912, 47.403901474], [8.5563355604, 47.4039205549], [8.5563568526, 47.4039400325], [8.5563777811, 47.4039599004], [8.5563896575, 47.4039715379], [8.5564013955, 47.403983315], [8.5564129935, 47.4039952301], [8.556424305, 47.4040071272], [8.5564354767, 47.4040191554], [8.5564465074, 47.4040313133], [8.5564687225, 47.4040566835], [8.5564902465, 47.4040826427], [8.5565110638, 47.4041091719], [8.5565306551, 47.4041355534], [8.5565495474, 47.4041624398], [8.556567728, 47.4041898126], [8.5565711519, 47.4041951315], [8.5566195163, 47.4042704113], [8.5568320424, 47.4046012544], [8.5570075595, 47.4048744549], [8.5570196951, 47.4048933441], [8.5570316973, 47.4049131934], [8.5570442871, 47.4049326753], [8.5570574531, 47.4049517724], [8.5570715862, 47.4049709984], [8.5570863033, 47.404989781], [8.5571015907, 47.4050081024], [8.5571049796, 47.4050120402], [8.5571083927, 47.405015957], [8.5571118299, 47.4050198527], [8.5571153137, 47.4050237524], [8.5571188215, 47.4050276304], [8.5571223534, 47.4050314866], [8.5571357298, 47.4050456753], [8.5571493959, 47.4050595851], [8.5571633459, 47.4050732103], [8.5571779148, 47.4050868579], [8.5571927685, 47.405100195], [8.5572079004, 47.4051132156], [8.5574820998, 47.4052481323], [8.5576003488, 47.4052971162], [8.5576483474, 47.4053126718], [8.5576496945, 47.4053112015], [8.5576616216, 47.4053149313], [8.5576735788, 47.4053185636], [8.5576855653, 47.405322098], [8.5576976654, 47.4053255585], [8.5577097936, 47.4053289192], [8.5577219491, 47.4053321801], [8.5577455356, 47.405338201], [8.55776921, 47.4053438669], [8.5577929668, 47.4053491764], [8.5578170494, 47.4053541782], [8.5578412052, 47.4053588138], [8.5578654286, 47.4053630822], [8.5579083257, 47.4053704784], [8.5579514061, 47.4053767192], [8.5579946387, 47.4053817999], [8.55803841, 47.4053857489], [8.5580822725, 47.4053885088], [8.5581261936, 47.4053900776], [8.5581645063, 47.4053905069], [8.5582028185, 47.4053900426], [8.5582411095, 47.405388685], [8.5582792126, 47.405386445], [8.5583172535, 47.4053833204], [8.5583552115, 47.4053793129], [8.5584721198, 47.4053657939], [8.5585243286, 47.4053597561], [8.5585405011, 47.4054331792], [8.5585702481, 47.4055679971], [8.5585938384, 47.4056753497], [8.5586501248, 47.4059311651], [8.5586512445, 47.4059347373], [8.5586526581, 47.4059382038], [8.5586543558, 47.4059415402], [8.5586563259, 47.4059447235], [8.5586585545, 47.4059477314], [8.5586609532, 47.4059504665], [8.5586635657, 47.4059529981], [8.5586663747, 47.4059553097], [8.5586693619, 47.4059573861], [8.5586725075, 47.4059592135], [8.5586757908, 47.4059607801], [8.5586832976, 47.4059639818], [8.558691064, 47.405966489], [8.5586990258, 47.405968281], [8.5587075525, 47.405969379], [8.5587161452, 47.4059696569], [8.558724725, 47.405969112], [8.5587615917, 47.4060518783], [8.5587552664, 47.4060525424], [8.5587490177, 47.4060537272], [8.5587428883, 47.4060554247], [8.5587369203, 47.4060576231], [8.558730044, 47.4060608932], [8.5587235251, 47.4060648277], [8.5587174275, 47.406069388], [8.5587152995, 47.4060712448], [8.558713329, 47.4060732678], [8.5587115289, 47.4060754439], [8.558709911, 47.4060777587], [8.558708486, 47.406080197], [8.5587072632, 47.4060827427], [8.5587062507, 47.4060853791], [8.5587054163, 47.4060882459], [8.5587048305, 47.4060911735], [8.5587044976, 47.4060941406], [8.5587044201, 47.4060971253], [8.5587045985, 47.4061001057], [8.5587050315, 47.4061030598], [8.5588089091, 47.4065733882], [8.5587942493, 47.4067135747], [8.5587900999, 47.4068500712], [8.5587842546, 47.4070250732], [8.5587789995, 47.4071833485], [8.5587743869, 47.4073230868], [8.5587716352, 47.4074120757], [8.5587647989, 47.4076344104], [8.5587587219, 47.4078298433], [8.5587538397, 47.4079882139], [8.5587502454, 47.4081064441], [8.55872699, 47.4082228958], [8.558661904, 47.4082594168], [8.5586516622, 47.4085221013], [8.5586178768, 47.4085216101], [8.5586163635, 47.4085630111], [8.5586054942, 47.4088525159], [8.5586022527, 47.4089378215], [8.5585814968, 47.4094880355], [8.5585801375, 47.4095242178], [8.5585548422, 47.4101933878], [8.5585349367, 47.4107206262], [8.5585285587, 47.4108835878], [8.5585014452, 47.4115917597], [8.5584757501, 47.4122658974], [8.5584727638, 47.4123438236], [8.5584587406, 47.4127104166], [8.558455402, 47.41279806], [8.5584377339, 47.4130108466], [8.558434571, 47.4130488634], [8.5577058628, 47.4130421795], [8.5570445596, 47.4130359264], [8.5557138792, 47.4130244053], [8.5546611116, 47.4130186764], [8.5545384962, 47.4130174315], [8.5544678252, 47.4130167564], [8.5543274775, 47.4130154216], [8.5536237968, 47.413009145], [8.5529594989, 47.413003465], [8.5522969272, 47.4129978806], [8.5508624514, 47.4129850908], [8.5508340643, 47.41295775], [8.5503912501, 47.4129538081], [8.5501974947, 47.4129522452], [8.5497391307, 47.4129264223], [8.5493518628, 47.4129165634], [8.5489525794, 47.41290242], [8.5485441353, 47.4128810772], [8.5481377105, 47.4128483889], [8.5477360679, 47.4127972053], [8.5477039629, 47.4127954445], [8.5476741811, 47.4128689229], [8.547671824, 47.4128747293], [8.5474554057, 47.4134091494], [8.5474534286, 47.4134223911], [8.5473972933, 47.4138013771], [8.5473853256, 47.4138820866], [8.5473792944, 47.4139169552], [8.5470732401, 47.4138879688], [8.5467570662, 47.4138572795], [8.5466692959, 47.4138487759], [8.5465840917, 47.4138489629], [8.5457080317, 47.4138504346], [8.5454636672, 47.4138508785], [8.5453871882, 47.4138551638], [8.5449574184, 47.4138796533], [8.5441999847, 47.4139225778], [8.5426617694, 47.4140107703], [8.5415243099, 47.4140754724], [8.541531812, 47.4141337247], [8.5416174733, 47.4147540197], [8.5416954195, 47.4153190787], [8.5417405442, 47.415648414], [8.541812256, 47.4161677026], [8.541770555, 47.4161704392], [8.5418005691, 47.416388956], [8.5418421636, 47.4166917346], [8.5418931069, 47.4170625262], [8.5418929419, 47.4170650772], [8.5418927518, 47.4170676265], [8.5418925368, 47.4170701737], [8.5418922964, 47.4170727224], [8.5418920309, 47.4170752685], [8.5418917405, 47.4170778119], [8.541891157, 47.4170792798], [8.5418904549, 47.4170806948], [8.5418896389, 47.4170820473], [8.5418887145, 47.4170833283], [8.541887688, 47.4170845289], [8.5418865663, 47.4170856411], [8.5418853571, 47.4170866574], [8.5418839054, 47.4170876755], [8.541882366, 47.4170885555], [8.5418807521, 47.4170892897], [8.5418790773, 47.417089872], [8.541877356, 47.4170902974], [8.5418756027, 47.4170905622], [8.5418738326, 47.4170906643], [8.5418720605, 47.4170906027], [8.5418691453, 47.4170906925], [8.5418662305, 47.4170907953], [8.5418633162, 47.4170909111], [8.5418604043, 47.4170910398], [8.5418574931, 47.4170911815], [8.5418545825, 47.4170913361], [8.5418456282, 47.4170918827], [8.5418366819, 47.4170925469], [8.5418277451, 47.4170933285], [8.5418188572, 47.4170942235], [8.5418099817, 47.4170952346], [8.5418011202, 47.4170963618], [8.5417344577, 47.4171064706], [8.5417064625, 47.417109933], [8.5416783825, 47.4171126213], [8.5416502389, 47.4171145334], [8.5416219062, 47.4171156717], [8.5415935528, 47.4171160235], [8.5415652006, 47.4171155883], [8.54068138, 47.4170529546], [8.5400779672, 47.4170100108], [8.5396054482, 47.4169766194], [8.5393009919, 47.4169551088], [8.5385757868, 47.4169022897], [8.538561153, 47.4169008494], [8.5385465471, 47.4168991503], [8.5385319735, 47.4168971929], [8.5385175594, 47.4168949977], [8.538503186, 47.4168925498], [8.5384888579, 47.41688985], [8.5383876712, 47.4168684429], [8.5383845219, 47.4168677988], [8.5383813623, 47.4168672079], [8.5383781932, 47.4168666702], [8.5383749866, 47.4168661817], [8.5383717721, 47.4168657478], [8.5383685507, 47.4168653686], [8.5383312639, 47.4168611368], [8.5383285977, 47.4168606434], [8.5383259337, 47.4168601383], [8.5383232719, 47.4168596215], [8.5383206199, 47.4168590944], [8.5383179702, 47.4168585556], [8.5383153229, 47.4168580052], [8.5383246628, 47.4169354526], [8.5382711755, 47.4169316356], [8.5382168388, 47.4169251274], [8.5381853502, 47.4169212361], [8.5359649164, 47.416653846], [8.5333553045, 47.4163394673], [8.5326202419, 47.4162509275], [8.532610572, 47.4162169369], [8.5324900601, 47.41580042], [8.5323625418, 47.4153594127], [8.5322350285, 47.4149179645], [8.5321077672, 47.4144764237], [8.531980513, 47.4140350617], [8.5318786491, 47.4136820621], [8.5317917618, 47.4133808302], [8.5317603734, 47.4132719266], [8.530254504, 47.4134720443], [8.530191615, 47.4134107524], [8.5297607835, 47.4129910736], [8.529272323, 47.4125153853], [8.5286812288, 47.4119394508], [8.5281593094, 47.4114311335], [8.5281121189, 47.4113907859], [8.5279596559, 47.4112606976], [8.5280247406, 47.4112488405], [8.527957525, 47.4112284256], [8.5279487572, 47.4112208624], [8.5275696708, 47.4108966287], [8.5271839651, 47.4105666993], [8.5271813236, 47.4105347019], [8.5270416717, 47.4104075051], [8.5269917625, 47.4104039273], [8.5267845818, 47.4102343788], [8.5265194451, 47.4100175219], [8.5264948366, 47.4100316957], [8.5263646241, 47.4099253596], [8.5263302613, 47.4098972677], [8.5265275255, 47.4097352441], [8.5266950775, 47.4095977064], [8.5268536341, 47.4094674311], [8.5269104384, 47.4094207698], [8.5270252294, 47.4093262478], [8.5271284141, 47.4092414596], [8.5273363384, 47.4090703401], [8.5277406018, 47.4093959834], [8.5278794069, 47.409507734], [8.5279135984, 47.4095351974], [8.5280877455, 47.4096755516], [8.5281240826, 47.4097048387], [8.5281326509, 47.4097117291], [8.5281383766, 47.4097073305], [8.5281926931, 47.40966524], [8.5282464659, 47.4096224568], [8.528299686, 47.4095789882], [8.528351572, 47.4095354974], [8.5284029048, 47.4094913549], [8.5284536763, 47.409446568], [8.5286071731, 47.4095257062], [8.5288003171, 47.4093524656], [8.5289847734, 47.4091879868], [8.5289604054, 47.4092345141], [8.5289919638, 47.4092737945], [8.529127283, 47.4094429827], [8.5293039289, 47.4093720264], [8.5294957003, 47.4092949464], [8.529704452, 47.4092110934], [8.5298533257, 47.4091512375], [8.5300247665, 47.409082426], [8.5300361627, 47.4090779378], [8.5300475942, 47.4090732334], [8.5300815024, 47.4090596725], [8.5302572674, 47.4089892358], [8.5303322181, 47.4089591592], [8.5304616564, 47.4089072766], [8.5304841023, 47.4088982134], [8.5305581428, 47.4088684142], [8.5305857572, 47.4088574582], [8.5308243866, 47.4088615631], [8.5308376022, 47.4088618071], [8.5308383011, 47.4088456779], [8.5308395394, 47.4088295812], [8.5308413158, 47.4088135349], [8.530843646, 47.4087974468], [8.5308465171, 47.4087814464], [8.5308499257, 47.4087655517], [8.5308560885, 47.408741907], [8.5308633309, 47.4087185704], [8.5308716376, 47.408695591], [8.5308812657, 47.4086723965], [8.530891978, 47.4086496823], [8.5309037507, 47.4086274992], [8.5309176193, 47.4086040968], [8.5309324474, 47.4085812903], [8.5309482092, 47.4085591189], [8.5309655885, 47.4085367439], [8.5309839186, 47.408515141], [8.5310031655, 47.4084943507], [8.531127229, 47.4083646121], [8.5312571448, 47.4082289444], [8.5313195009, 47.4081637337], [8.5313223554, 47.4081606643], [8.5313249027, 47.4081573356], [8.5313271193, 47.4081537782], [8.5313289848, 47.4081500247], [8.5313303782, 47.4081464222], [8.531331448, 47.4081427108], [8.5313321858, 47.4081389194], [8.531332586, 47.4081350777], [8.5313323724, 47.4081312202], [8.5313318223, 47.4081273962], [8.5313309398, 47.4081236349], [8.5313297316, 47.4081199653], [8.5313280826, 47.4081161594], [8.5313260836, 47.4081125252], [8.5313237522, 47.4081090948], [8.531321109, 47.4081058984], [8.5313278136, 47.4081136517], [8.5313399145, 47.4081278844], [8.5313518565, 47.4081422507], [8.5313636382, 47.4081567488], [8.5313751311, 47.4081712152], [8.5313864644, 47.4081858069], [8.5313976368, 47.4082005223], [8.5314098637, 47.408216653], [8.5314218848, 47.4082329377], [8.5314336981, 47.4082493738], [8.5314451674, 47.4082657638], [8.53145643, 47.4082822965], [8.5314674844, 47.4082989692], [8.5314701658, 47.4083030815], [8.5314744797, 47.4083100363], [8.5314787564, 47.4083170141], [8.5314829957, 47.4083240146], [8.5314871791, 47.4083310064], [8.5314913251, 47.4083380204], [8.5314954339, 47.4083450563], [8.5315652269, 47.4084640124], [8.5315942214, 47.4084525295], [8.5317176885, 47.4084087345], [8.5319443907, 47.4083282697], [8.5319833041, 47.4083146519], [8.5323795158, 47.4081742499], [8.532447814, 47.4081501176], [8.5331875519, 47.4078882027], [8.5339097602, 47.4076325118], [8.5345397622, 47.4074093171], [8.5357390192, 47.4069856855], [8.535768681, 47.4069783789], [8.5359426376, 47.4069314096], [8.536057897, 47.4069602777], [8.5360914323, 47.4069686306], [8.5360104698, 47.4068307856], [8.5361774495, 47.4067519777], [8.5361803894, 47.4067559699], [8.5361836484, 47.4067597063], [8.5361872042, 47.4067631613], [8.5361910327, 47.4067663115], [8.5361957335, 47.4067695264], [8.5362007175, 47.4067722819], [8.53620594, 47.4067745533], [8.5362113539, 47.4067763201], [8.5362192518, 47.4067783709], [8.536227296, 47.40677974], [8.5362354277, 47.4067804174], [8.5362436829, 47.4067803938], [8.5362519052, 47.4067796574], [8.5362600332, 47.4067782137], [8.536693531, 47.4066833622], [8.5371799996, 47.4065775066], [8.5371915688, 47.4065750399], [8.5373433071, 47.4065417641], [8.5375074182, 47.406505806], [8.5377393016, 47.4064550711], [8.5377423626, 47.4064543964], [8.5377453445, 47.4064534302], [8.5377482195, 47.4064521815], [8.537750961, 47.4064506619], [8.5377532169, 47.4064491309], [8.5377553367, 47.4064474163], [8.5377573055, 47.4064455303], [8.5377591095, 47.406443486], [8.5377598858, 47.4064423285], [8.5377605586, 47.406441108], [8.5377611228, 47.4064398336], [8.5377615741, 47.406438515], [8.5377619092, 47.4064371622], [8.5377621254, 47.4064357854], [8.5377622212, 47.406434395], [8.5377621966, 47.4064330138], [8.5377620532, 47.4064316399], [8.5377617919, 47.4064302834], [8.5377614148, 47.4064289545], [8.5377609246, 47.4064276629], [8.5377603251, 47.4064264184], [8.5377596205, 47.4064252302], [8.5378118132, 47.4065075063], [8.5378208078, 47.4065215856], [8.5378296473, 47.4065357628], [8.5378383308, 47.4065500362], [8.5378467805, 47.4065642734], [8.5378550748, 47.4065786016], [8.5378632129, 47.4065930191], [8.5378711491, 47.4066073786], [8.5378789199, 47.4066218282], [8.5378865244, 47.4066363661], [8.5378938993, 47.4066508662], [8.5379011087, 47.4066654493], [8.5379081516, 47.4066801136], [8.53810655, 47.4065682431], [8.5381016625, 47.4065569861], [8.5380979011, 47.4065453045], [8.5380953021, 47.4065333106], [8.5380938903, 47.4065211198], [8.5380936741, 47.4065090237], [8.5380946269, 47.4064969632], [8.53809674, 47.4064850511], [8.5380999934, 47.4064733987], [8.5381065041, 47.4064580732], [8.5381144651, 47.4064434485], [8.5381238019, 47.4064296614], [8.5381325121, 47.4064189719], [8.53814205, 47.4064090138], [8.5381523543, 47.4063998512], [8.538163359, 47.4063915427], [8.5381660743, 47.406389574], [8.5385072844, 47.4061453654], [8.5386035824, 47.4060767252], [8.5390594986, 47.405750224], [8.5395151213, 47.4054238955], [8.5397386996, 47.4052640446], [8.5399212408, 47.4051335043], [8.5400535487, 47.40503873], [8.5402675321, 47.4048853299], [8.540448047, 47.4047562373], [8.5404520827, 47.4047533171], [8.5404561164, 47.4047503942], [8.5404601481, 47.4047474685], [8.5404641746, 47.4047445425], [8.5404681992, 47.4047416138], [8.5404722218, 47.4047386824], [8.540476801, 47.4047353926], [8.5404813778, 47.4047320995], [8.5404859521, 47.4047288029], [8.5404905199, 47.4047255059], [8.5404950853, 47.4047222054], [8.5404996482, 47.4047189016], [8.5405188737, 47.4047048927], [8.5405380553, 47.4046908238], [8.5405571929, 47.4046766951], [8.5405762159, 47.4046625592], [8.5405951948, 47.4046483642], [8.5406141296, 47.4046341102], [8.5406262319, 47.4046249387], [8.5406383147, 47.4046157415], [8.540650378, 47.4046065187], [8.5406623914, 47.4045972934], [8.5406743853, 47.4045880427], [8.5406863595, 47.4045787666], [8.5407012393, 47.4045671477], [8.5407160886, 47.4045554897], [8.5407309071, 47.4045437927], [8.5407456492, 47.4045320931], [8.5407603606, 47.4045203548], [8.5407750412, 47.4045085781], [8.5407879529, 47.4044982308], [8.5408008408, 47.4044878539], [8.540813705, 47.4044774476], [8.5408265109, 47.4044670398], [8.5408392931, 47.4044566028], [8.5408520514, 47.4044461367], [8.540879157, 47.4044235378], [8.5409061476, 47.4044008017], [8.5409330225, 47.4043779289], [8.5409596247, 47.404355055], [8.5409861112, 47.4043320473], [8.5410124814, 47.4043089062], [8.5409531049, 47.4042548725], [8.5409443355, 47.4042613938], [8.5409349538, 47.4042669984], [8.5409250552, 47.4042716294], [8.5409164585, 47.4042747186], [8.5409076322, 47.4042770726], [8.5408986389, 47.4042786747], [8.5408895427, 47.4042795135], [8.540876953, 47.40428002], [8.5408643765, 47.4042792522], [8.5408519418, 47.404277218], [8.5408405248, 47.4042741786], [8.5408294469, 47.4042700715], [8.540818808, 47.4042649334], [8.5407975222, 47.4042526305], [8.5407761811, 47.4042404237], [8.5407547852, 47.4042283134], [8.5407332207, 47.4042162362], [8.5407116017, 47.4042042569], [8.5406899286, 47.4041923759], [8.5406733517, 47.4041834361], [8.5406567446, 47.4041745523], [8.5406401076, 47.4041657246], [8.5406233757, 47.4041569189], [8.5406066141, 47.40414817], [8.5405898229, 47.4041394779], [8.5405757211, 47.4041322245], [8.540561599, 47.4041250105], [8.5405474569, 47.4041178361], [8.5405332494, 47.4041106784], [8.5405190219, 47.4041035607], [8.5405047745, 47.4040964828], [8.5404905277, 47.4040894312], [8.5404762617, 47.4040824183], [8.5404619768, 47.4040754442], [8.540447629, 47.4040684877], [8.5404332623, 47.4040615703], [8.5404188767, 47.4040546921], [8.5403999741, 47.4040458641], [8.5403810414, 47.404037101], [8.5403620788, 47.4040284026], [8.5403430145, 47.4040197367], [8.5403239205, 47.4040111364], [8.540304797, 47.4040026017], [8.54028467, 47.4039936172], [8.5402645103, 47.4039847063], [8.5402443182, 47.4039758692], [8.5402240134, 47.4039670713], [8.5402036765, 47.403958348], [8.5401833078, 47.4039496994], [8.5403483725, 47.4037726854], [8.540470781, 47.4036414221], [8.5405615102, 47.4036786053], [8.540839669, 47.403479283], [8.5410206583, 47.4036115203], [8.5410702995, 47.4036408204], [8.5412345452, 47.4035229367], [8.5414502013, 47.4033682319], [8.5414101901, 47.4033497151], [8.5413754034, 47.4033333483], [8.5413412268, 47.403315743], [8.5413077043, 47.4032969219], [8.5412761954, 47.4032777432], [8.541245366, 47.4032574902], [8.5412152526, 47.4032361872], [8.5411978005, 47.4032225913], [8.5412815343, 47.403162496], [8.5414256852, 47.4030589718], [8.5416742661, 47.4028807713], [8.5416867628, 47.4028719538], [8.5418227002, 47.4027743722], [8.5419663303, 47.4026713919], [8.5419990566, 47.4026478003], [8.5420397553, 47.4026247522], [8.5421301809, 47.4025736874], [8.5422924039, 47.4024819349], [8.5423648626, 47.4024410521], [8.5425896128, 47.4023138281], [8.5426424892, 47.4022838093], [8.5427591701, 47.4022179841], [8.5429397885, 47.4021157637], [8.543007343, 47.4020773839], [8.5432347391, 47.4019488462], [8.5435351246, 47.4017789614], [8.54353756, 47.4017775709], [8.5436112574, 47.4017358848], [8.5437775208, 47.4016417348], [8.5437642821, 47.40162433], [8.5439986265, 47.4015409605], [8.544098189, 47.4014726162], [8.5440648254, 47.4014290843], [8.5442881637, 47.4013503449], [8.5444243716, 47.4012546555], [8.5443325272, 47.4011943768], [8.5442977139, 47.4011715745], [8.5445090456, 47.401022599], [8.5445378276, 47.4010414112], [8.5446122486, 47.4010901269], [8.5446359423, 47.4011057045], [8.5447921621, 47.400995718], [8.5444817306, 47.4007924776], [8.5445186979, 47.4007665149], [8.5438348126, 47.4003187446], [8.5440584324, 47.4001612681], [8.5441413423, 47.3999604056], [8.5443774181, 47.4000053883], [8.5451427077, 47.4001512919], [8.5457120263, 47.4002598314], [8.5461316, 47.4003396086], [8.5461882145, 47.4003461982], [8.5461947237, 47.4003342983], [8.54619666, 47.4003320247], [8.5461987701, 47.4003299115], [8.5462010409, 47.400327972], [8.546203458, 47.4003262183], [8.5462063779, 47.4003244569], [8.546209445, 47.4003229665], [8.5462126343, 47.4003217594], [8.5462159195, 47.4003208454], [8.5462207843, 47.400319816], [8.5462257197, 47.4003192095], [8.546230689, 47.4003190307], [8.546235645, 47.4003192797], [8.5462405612, 47.400319954], [8.5462454012, 47.4003210486], [8.5462668968, 47.4003252382], [8.5462884171, 47.4003292985], [8.5463099615, 47.4003332294], [8.5463316056, 47.4003370441], [8.5463532724, 47.4003407282], [8.546374961, 47.4003442815], [8.546397927, 47.4003478853], [8.5464209153, 47.4003513441], [8.546443925, 47.4003546578], [8.5464670242, 47.4003578356], [8.546490143, 47.4003608671], [8.5465132806, 47.4003637522], [8.5465811955, 47.3999882923], [8.5466259594, 47.3999861664], [8.546670683, 47.3999833176], [8.5467153548, 47.3999797465], [8.5467597457, 47.3999754767], [8.5468040621, 47.3999704937], [8.5468482927, 47.3999647988], [8.5468977858, 47.3999570466], [8.5469468653, 47.3999470037], [8.5469954253, 47.3999346918], [8.5470415957, 47.3999207167], [8.5470870947, 47.3999046904], [8.5471318314, 47.3998866449], [8.5471734594, 47.3998675312], [8.5472138973, 47.3998460136], [8.5472530064, 47.3998221659], [8.5472882542, 47.3997978316], [8.5473221173, 47.3997716045], [8.547354494, 47.3997435632], [8.5473689785, 47.3997308951], [8.5473827858, 47.3997174921], [8.5473958786, 47.3997033904], [8.5474076015, 47.3996894079], [8.5474186219, 47.3996748652], [8.5474289129, 47.3996597976], [8.5474378899, 47.3996449076], [8.5474459223, 47.3996294874], [8.5474529789, 47.3996135971], [8.547458827, 47.3995979064], [8.5474637235, 47.3995818933], [8.5474676509, 47.3995656153], [8.5474700839, 47.3995505019], [8.5474720161, 47.3995353163], [8.5474734453, 47.3995200752], [8.5474743672, 47.3995048578], [8.5474747876, 47.3994896184], [8.5474747062, 47.3994743734], [8.5474741143, 47.3994591473], [8.5474730247, 47.3994439487], [8.5474714388, 47.3994287939], [8.5474693432, 47.3994136023], [8.5474667488, 47.399398488], [8.5474636585, 47.3993834672]]], "type": "Polygon"}, "properties": {"kname": "Kreis 11", "knr": 11, "objectid": 20, "objid": "19", "qname": "Oerlikon", "qnr": 115}, "type": "Feature"}, {"geometry": {"coordinates": [[[8.532610572, 47.4162169369], [8.5326202419, 47.4162509275], [8.5324364589, 47.4163017803], [8.5324318017, 47.4163195715], [8.5321738057, 47.4162885157], [8.5319748936, 47.4170495437], [8.5314942081, 47.416967045], [8.5309740125, 47.4168920597], [8.5308531186, 47.4168775605], [8.5307105843, 47.4168604493], [8.5301424401, 47.4168066117], [8.5295828371, 47.4167626841], [8.5293639333, 47.4167508883], [8.5289846338, 47.4167305415], [8.5287151373, 47.4167267964], [8.5281123105, 47.416734199], [8.5280680594, 47.416734706], [8.528031654, 47.4167365872], [8.527540092, 47.4167614769], [8.5275302945, 47.416761929], [8.5273843803, 47.4167687003], [8.5272390063, 47.4167753863], [8.5271080534, 47.4167814856], [8.5270936295, 47.4167825209], [8.5269489988, 47.4167931573], [8.5268036936, 47.416803799], [8.5267227097, 47.4168096893], [8.5266587868, 47.4168138979], [8.5265137263, 47.4168235475], [8.5263688102, 47.4168331964], [8.526223615, 47.4168427479], [8.5260784219, 47.4168523991], [8.52606082, 47.4168535631], [8.5259332145, 47.4168614205], [8.5257878722, 47.4168702623], [8.5256427954, 47.4168791922], [8.5251989473, 47.4169063389], [8.5251752558, 47.4169078208], [8.5243903619, 47.4169475349], [8.5242749399, 47.4169549253], [8.5240801088, 47.4169681874], [8.523994031, 47.4171149133], [8.5239686187, 47.4171632571], [8.5238567444, 47.4173759965], [8.5238210674, 47.4173746323], [8.5238130567, 47.4174172538], [8.5238223408, 47.4174176164], [8.5238024662, 47.4174502749], [8.5236665548, 47.4176742855], [8.5232939911, 47.4183425692], [8.5229108832, 47.4190525072], [8.5224837714, 47.4198272333], [8.5220661235, 47.4205857498], [8.5221060398, 47.4205862752], [8.5220960283, 47.4206153329], [8.5219960452, 47.4209051006], [8.521912473, 47.4211475797], [8.5218440291, 47.4213460215], [8.5217724739, 47.4215538382], [8.5217549504, 47.4216045542], [8.5215520877, 47.4218531886], [8.521075442, 47.4222595324], [8.520681329, 47.4225286651], [8.5201282264, 47.422891474], [8.5201043389, 47.4229160748], [8.5199039336, 47.4230911842], [8.5197769286, 47.4232331351], [8.5197244887, 47.4233326601], [8.5195830207, 47.4237688654], [8.5195814572, 47.4238185143], [8.5195800442, 47.4238631695], [8.5197573033, 47.4238657299], [8.5200588417, 47.423870105], [8.5201422195, 47.4238712951], [8.5203798947, 47.4238747016], [8.5205907741, 47.4238777116], [8.5208206869, 47.4238807491], [8.5211250679, 47.423884762], [8.5216616262, 47.4238929491], [8.521814434, 47.4238950338], [8.5221892963, 47.4239001466], [8.5224576221, 47.4239032976], [8.5228149557, 47.4239100209], [8.5229442334, 47.4239124875], [8.5233474952, 47.4239167986], [8.5236886217, 47.4239216924], [8.5237906853, 47.423923334], [8.5242039634, 47.4239299858], [8.5242588506, 47.4239307297], [8.5242995038, 47.4245466541], [8.5243254712, 47.4247097492], [8.5247384547, 47.4247158154], [8.5248163862, 47.4250804934], [8.5243870545, 47.4250963938], [8.524392041, 47.4251277385], [8.5243965878, 47.4251562998], [8.5244766751, 47.4256345193], [8.5244860242, 47.4256899296], [8.5247142721, 47.4256836553], [8.5253763472, 47.4256651968], [8.5253814316, 47.4257330611], [8.5253841407, 47.4257683849], [8.5253711629, 47.4257689576], [8.5254677171, 47.4258439658], [8.525477702, 47.4263872655], [8.5254778883, 47.4268589672], [8.5258556659, 47.4273020295], [8.5258498685, 47.4274204578], [8.5258044083, 47.4275899898], [8.5257832001, 47.4278890101], [8.5258076039, 47.4279156846], [8.5257702536, 47.4285275209], [8.5257676258, 47.428807567], [8.5257650379, 47.4290701625], [8.5258412461, 47.4296086104], [8.5259215642, 47.4301542246], [8.526042051, 47.4305706377], [8.5260154066, 47.4305764652], [8.5261701495, 47.4309312203], [8.5262889914, 47.4311172876], [8.5263010336, 47.4311162749], [8.5263043414, 47.4311159739], [8.5263104104, 47.4311469495], [8.5276552965, 47.4325984084], [8.5276598104, 47.4326032772], [8.5276807679, 47.4326556104], [8.5276829476, 47.4326610678], [8.5269291726, 47.4328387255], [8.525924996, 47.4330754039], [8.5258554367, 47.4330911367], [8.5257856611, 47.4331058804], [8.5257156831, 47.4331196318], [8.5256448966, 47.4331324965], [8.525573933, 47.4331443459], [8.525502807, 47.4331551776], [8.5254756475, 47.4330691443], [8.5246430356, 47.4312881175], [8.5246385631, 47.4312567302], [8.5236652202, 47.4313392491], [8.5211786787, 47.4315500148], [8.5200788877, 47.4316428088], [8.5198067973, 47.4316703617], [8.5187954759, 47.4318892349], [8.5187874972, 47.4318907988], [8.5187794716, 47.4318921005], [8.5187714076, 47.4318931386], [8.5187632114, 47.4318939199], [8.5187549938, 47.4318944289], [8.5187467639, 47.431894665], [8.5187384898, 47.4318946415], [8.5187302211, 47.4318943437], [8.5187219668, 47.4318937719], [8.5187138158, 47.4318929363], [8.5187056965, 47.4318918335], [8.5186976179, 47.4318904646], [8.5182534778, 47.4318071578], [8.5182274048, 47.4318021492], [8.518201386, 47.4317968664], [8.5181754242, 47.4317913101], [8.5181497111, 47.4317855244], [8.5181240598, 47.4317794703], [8.5180984732, 47.4317731486], [8.5180731221, 47.431766593], [8.5180478439, 47.4317597617], [8.5180226417, 47.4317526555], [8.5179977504, 47.4317453446], [8.5179729395, 47.4317377655], [8.5179482118, 47.4317299191], [8.5179398123, 47.4317271806], [8.5179314142, 47.4317244375], [8.5179230176, 47.43172169], [8.5179146267, 47.4317189394], [8.5179062372, 47.4317161843], [8.5178978492, 47.4317134247], [8.5178665529, 47.4317030644], [8.5178352827, 47.4316926258], [8.5178040388, 47.431682109], [8.5177728954, 47.4316715393], [8.5177417785, 47.4316608918], [8.5177106884, 47.4316501667], [8.5176714447, 47.4316365081], [8.5176322447, 47.4316227248], [8.5175930887, 47.4316088168], [8.5175540991, 47.4315948282], [8.5175151541, 47.4315807159], [8.5174762541, 47.4315664802], [8.517132995, 47.431441336], [8.5170807177, 47.4314224143], [8.5170283653, 47.4314037015], [8.5169759387, 47.4313851976], [8.5169232339, 47.4313668323], [8.516870456, 47.4313486782], [8.5168176058, 47.4313307356], [8.5167943612, 47.431473497], [8.5167840671, 47.4314875352], [8.5167140001, 47.4314661328], [8.516702482, 47.4314629692], [8.5166908265, 47.4314603566], [8.51667906, 47.431458301], [8.5166669212, 47.4314567778], [8.5166547226, 47.4314558473], [8.5166424932, 47.4314555117], [8.5166302076, 47.4314557133], [8.5166179464, 47.4314565121], [8.5166057385, 47.4314579063], [8.5165938789, 47.4314598424], [8.5165821247, 47.4314623404], [8.5165705026, 47.4314653945], [8.5165337945, 47.4314827964], [8.5164989386, 47.431503662], [8.5164662608, 47.4315277965], [8.5164390173, 47.4315520764], [8.5164139836, 47.4315786287], [8.5163913483, 47.4316072533], [8.5162937348, 47.4317532262], [8.5161319781, 47.4317052173], [8.5161265546, 47.4317116336], [8.516120599, 47.4317175592], [8.5161141554, 47.4317229502], [8.5161072717, 47.4317277665], [8.5161005617, 47.4317316761], [8.516093562, 47.4317350394], [8.5160863167, 47.4317378349], [8.516078872, 47.431740045], [8.5160712751, 47.4317416556], [8.5160576232, 47.4317439411], [8.5160438146, 47.4317449001], [8.5160299779, 47.4317445238], [8.5160165624, 47.4317428709], [8.5160033621, 47.4317399627], [8.5159904941, 47.4317358249], [8.5159157918, 47.4317060074], [8.5158408396, 47.4316768236], [8.515765643, 47.4316482757], [8.515689556, 47.4316201278], [8.5156132313, 47.4315926308], [8.5155366745, 47.4315657867], [8.515456553, 47.4315384525], [8.5153762023, 47.4315117994], [8.5152956283, 47.4314858293], [8.515214203, 47.4314603488], [8.5151325627, 47.4314355658], [8.5150507134, 47.4314114822], [8.5134209188, 47.4309389658], [8.513392524, 47.4309309052], [8.5133640519, 47.4309231224], [8.5133355052, 47.4309156179], [8.5133066634, 47.4309083373], [8.5132777514, 47.4309013409], [8.5132487719, 47.4308946294], [8.5132195857, 47.4308881633], [8.5131903397, 47.4308819733], [8.5131610366, 47.4308760599], [8.5131315006, 47.4308703903], [8.513101912, 47.4308650018], [8.5130722736, 47.4308598948], [8.5130188306, 47.4308529802], [8.5129651796, 47.4308479269], [8.5129113853, 47.4308447411], [8.5128572393, 47.4308434247], [8.5128030803, 47.4308440003], [8.5127489745, 47.4308464672], [8.5126953953, 47.4308507148], [8.5126420053, 47.4308569017], [8.5125888746, 47.4308650196], [8.5125371247, 47.4308748385], [8.5124857563, 47.4308864896], [8.5124348341, 47.4308999579], [8.5117480181, 47.4310971324], [8.5117166661, 47.4311063672], [8.5116855333, 47.4311163159], [8.5116546358, 47.4311269731], [8.5116246598, 47.4311380764], [8.5115949393, 47.4311498468], [8.5115654892, 47.4311622782], [8.5115370449, 47.4311750845], [8.5115089355, 47.4311886102], [8.5114811793, 47.4312028464], [8.5114545707, 47.4312173479], [8.5114283286, 47.4312325024], [8.511402469, 47.4312483008], [8.5104509075, 47.4318444073], [8.5104437947, 47.4318484092], [8.510436385, 47.4318518304], [8.5104287259, 47.4318546491], [8.5104208661, 47.4318568474], [8.5104122031, 47.4318585095], [8.510403429, 47.4318594181], [8.5103946092, 47.4318595662], [8.5103858095, 47.4318589528], [8.510287341, 47.4319285075], [8.5103798255, 47.4319593027], [8.5102916438, 47.4320038461], [8.510155831, 47.4320601545], [8.5099808391, 47.4321260023], [8.5064116952, 47.4332010242], [8.5041413017, 47.4338880013], [8.5039207226, 47.43393474], [8.5036569757, 47.4340175955], [8.5034006464, 47.4341227174], [8.5020780491, 47.4346650626], [8.5020032778, 47.4346449809], [8.5019253589, 47.4346265391], [8.5015772035, 47.4346055191], [8.5008849033, 47.4345637286], [8.5002827734, 47.4344176171], [8.4956751642, 47.4328282343], [8.495630042, 47.4328116464], [8.4858041941, 47.4310261172], [8.4855356597, 47.4307419442], [8.4855152847, 47.430720388], [8.4854455544, 47.4306587655], [8.4854145259, 47.4306313421], [8.4854128936, 47.4306298997], [8.4853523623, 47.4305763982], [8.4851978061, 47.4304398144], [8.4851654842, 47.4304112513], [8.4850480328, 47.4303131175], [8.4850043406, 47.4302766068], [8.4849607026, 47.4302401496], [8.4849169163, 47.4302035677], [8.4848563109, 47.4301529252], [8.4848114277, 47.4301118468], [8.4845889236, 47.4299082434], [8.4844598666, 47.4297901374], [8.4844816012, 47.4296954935], [8.4844798582, 47.4296843646], [8.4844445369, 47.4294587025], [8.4844225849, 47.4293183988], [8.4844013338, 47.4291826673], [8.4843867051, 47.4290891789], [8.4843823343, 47.4290354289], [8.4844279127, 47.42899399], [8.4843866999, 47.4289608118], [8.4844505284, 47.4289307303], [8.4846736625, 47.4287310806], [8.4847670237, 47.4284638034], [8.4847862018, 47.4283537913], [8.4847189417, 47.4281014604], [8.484827564, 47.4278425803], [8.4852558349, 47.4272634525], [8.485531738, 47.4271190027], [8.4856431526, 47.4271093579], [8.4860095502, 47.427077685], [8.4865661287, 47.4268093361], [8.4869301487, 47.4267176857], [8.4874741842, 47.4265369674], [8.4877164278, 47.4264564943], [8.4881783716, 47.4263435313], [8.4883153816, 47.4262944238], [8.4883232967, 47.4262455096], [8.4887331255, 47.4261313983], [8.4890522713, 47.4260766681], [8.4893645297, 47.4260014012], [8.4901175239, 47.4258008615], [8.490183226, 47.4257787571], [8.4902102393, 47.4256667658], [8.4902227223, 47.4256150115], [8.4902770144, 47.425389866], [8.4902841444, 47.4253602888], [8.4901032878, 47.4253226078], [8.4900798371, 47.4253177209], [8.4900809914, 47.4253050276], [8.4900869516, 47.4252390937], [8.4900998195, 47.4250968102], [8.4901172432, 47.4249040677], [8.4900716297, 47.4243484272], [8.4901867813, 47.4242935076], [8.490258735, 47.4242591933], [8.4904767209, 47.4241552234], [8.4905265903, 47.4241314458], [8.4909324528, 47.4239378645], [8.4910160914, 47.4238979745], [8.4909950809, 47.4238576526], [8.4907812938, 47.4234473112], [8.4907674347, 47.4234207035], [8.4907382604, 47.4233649666], [8.4907137567, 47.4233181452], [8.4902464939, 47.4224253462], [8.4902065772, 47.4223490625], [8.4901991259, 47.4223348275], [8.4901439425, 47.4223008338], [8.4892876202, 47.4225147912], [8.4885487655, 47.4227016514], [8.4885268351, 47.4227071935], [8.4882508816, 47.4224552028], [8.4881436821, 47.4222950121], [8.4881171925, 47.4222616115], [8.4880144537, 47.4221320258], [8.4879943386, 47.4221066619], [8.4879759273, 47.4220057251], [8.4879071062, 47.4216402229], [8.4881710386, 47.421534391], [8.4883955945, 47.4214628009], [8.4888500001, 47.4212958066], [8.4896152087, 47.4211352217], [8.4901387655, 47.4210341121], [8.4907293466, 47.4208722393], [8.4912149224, 47.4207105549], [8.4914046258, 47.4206661998], [8.4913758793, 47.4205656184], [8.4914544485, 47.4205169591], [8.4914482145, 47.4203886563], [8.4914316184, 47.4202141869], [8.4915933702, 47.4201745124], [8.4919075929, 47.4201412554], [8.4922231231, 47.4200655835], [8.4922451378, 47.4200602918], [8.4925981409, 47.4199903489], [8.4927588559, 47.4199593074], [8.4930694355, 47.4199041337], [8.4931216046, 47.4198950219], [8.4932955808, 47.4198864369], [8.4934109134, 47.4198813191], [8.4935174083, 47.4198522203], [8.4936216882, 47.419824382], [8.4937280793, 47.4197960755], [8.4938253717, 47.4197700908], [8.4939056315, 47.4197473296], [8.4940917143, 47.4196943679], [8.4942926916, 47.419637322], [8.4943397227, 47.4196244337], [8.4943106226, 47.41957914], [8.4942674417, 47.4195128719], [8.4941652894, 47.4193056498], [8.4941421682, 47.4191079704], [8.4942552713, 47.4190365963], [8.4945571027, 47.4188326384], [8.494771859, 47.418601222], [8.494799122, 47.4185719282], [8.4950352346, 47.418308797], [8.4953271762, 47.418107033], [8.4956112933, 47.4179072368], [8.4959989872, 47.4176412873], [8.4961389205, 47.4175485989], [8.4961766096, 47.4175231942], [8.4964354641, 47.4173515563], [8.496862062, 47.4171591422], [8.4974515909, 47.4169579666], [8.497926162, 47.416820528], [8.4979578716, 47.4168117093], [8.4985290964, 47.4165988044], [8.4985517683, 47.4165886841], [8.4991708631, 47.4163222659], [8.4999013118, 47.4159988537], [8.500328645, 47.4157554004], [8.5006703167, 47.4154748177], [8.5007083902, 47.4154436143], [8.5009177843, 47.4152716657], [8.5013077021, 47.4145708372], [8.5011407268, 47.4142250907], [8.5011899292, 47.4139222069], [8.501359338, 47.4134268464], [8.5013795653, 47.4133700092], [8.5015364486, 47.4130825231], [8.5017115449, 47.412764871], [8.5019690176, 47.4128519768], [8.5020410461, 47.4128763202], [8.5021025508, 47.4128971625], [8.5021254969, 47.4129048669], [8.5021637796, 47.4128842761], [8.5021788388, 47.4128627295], [8.5022076794, 47.4128802742], [8.5026795178, 47.4131716265], [8.5029520667, 47.4132636646], [8.5028828156, 47.4133856633], [8.5028932437, 47.4133969009], [8.5029383823, 47.4134475777], [8.5029679152, 47.4134805062], [8.5030336523, 47.4135539395], [8.5031128716, 47.4136721344], [8.5037083057, 47.4133107674], [8.5043821153, 47.41288526], [8.5050515434, 47.4124592582], [8.5051066164, 47.4124235699], [8.5057006552, 47.4125461018], [8.5059565264, 47.4125971769], [8.5059638856, 47.4125984901], [8.505971292, 47.4125995046], [8.5059787333, 47.4126002189], [8.5059862767, 47.4126006345], [8.5059938308, 47.4126007415], [8.506001383, 47.4126005398], [8.5060088654, 47.4126000422], [8.5060163201, 47.4125992291], [8.5060237339, 47.4125981018], [8.5060309218, 47.4125966996], [8.5060380458, 47.4125950021], [8.5060450937, 47.4125930121], [8.5060691787, 47.4121036129], [8.506310896, 47.4121758483], [8.5069181221, 47.4117937828], [8.5071495812, 47.4117912909], [8.5095585561, 47.4117600465], [8.5098225774, 47.411756528], [8.5109656172, 47.4117418095], [8.5109614241, 47.411593422], [8.5118810778, 47.4115814798], [8.5119315438, 47.4115810743], [8.5119820114, 47.4115811782], [8.5120324753, 47.4115817916], [8.5120828997, 47.4115829136], [8.5121333103, 47.4115845442], [8.5121837019, 47.4115866833], [8.512190437, 47.411578975], [8.5122808069, 47.4114744135], [8.512652491, 47.4113368345], [8.513239349, 47.4111196273], [8.5138588774, 47.411174041], [8.5143962702, 47.4109486429], [8.514843886, 47.4107527731], [8.5151893029, 47.4108941953], [8.5155247484, 47.4109355051], [8.5157829512, 47.4109452327], [8.5160004012, 47.4109520213], [8.5162066612, 47.410955216], [8.5166242996, 47.4109460041], [8.5169463525, 47.4109547738], [8.5174949962, 47.4109499144], [8.5177428194, 47.410924744], [8.5176878781, 47.4108559054], [8.5180177651, 47.4107418972], [8.5185856183, 47.4105481272], [8.5191647524, 47.410350211], [8.5197594044, 47.4101460383], [8.5203502305, 47.4099441559], [8.520942884, 47.409741192], [8.5216060496, 47.4095146361], [8.5222099817, 47.4093083486], [8.5225064128, 47.409207136], [8.5225253617, 47.4092006618], [8.5226514108, 47.4091575711], [8.5226433987, 47.4091480216], [8.5229018534, 47.4089785051], [8.5232267579, 47.4087667346], [8.5235588524, 47.4085502993], [8.5238375901, 47.4083685549], [8.5240815102, 47.408213754], [8.5245559663, 47.4078900533], [8.5246034829, 47.4079271161], [8.5249586676, 47.4074447835], [8.5249723326, 47.4074262153], [8.5250533771, 47.4072804717], [8.5251316394, 47.4071282688], [8.5252170606, 47.4069568571], [8.5252787939, 47.4068329639], [8.5250065679, 47.4067805462], [8.5250675614, 47.4065671586], [8.5250896784, 47.4065731573], [8.5253848964, 47.406653729], [8.5254450017, 47.4066701644], [8.5257386119, 47.4067503905], [8.5258283875, 47.4067748041], [8.5261102986, 47.4068518202], [8.5263665359, 47.4069218091], [8.5264429257, 47.4069427772], [8.5267104465, 47.4070164192], [8.5267294606, 47.4070216282], [8.5268826846, 47.4070859393], [8.5268645157, 47.4071114257], [8.5268467601, 47.4071372017], [8.5268294225, 47.4071632606], [8.5268127419, 47.4071892239], [8.5267964763, 47.407215449], [8.5267806296, 47.4072419295], [8.5267655456, 47.4072683286], [8.526750913, 47.4072949806], [8.526736736, 47.4073218777], [8.5267231873, 47.4073486714], [8.5267100908, 47.4073756891], [8.5266974501, 47.407402923], [8.5265067388, 47.4078183464], [8.5264732919, 47.4078868795], [8.5264665007, 47.4079008047], [8.526422119, 47.4079821507], [8.5263502961, 47.4080058089], [8.5263329491, 47.4080342345], [8.5263089048, 47.4080712421], [8.5262840966, 47.408107742], [8.5262585352, 47.4081437185], [8.5262316971, 47.4081798606], [8.5262040988, 47.4082154258], [8.5261757528, 47.4082503979], [8.5260159972, 47.4084444493], [8.5262456798, 47.4085529533], [8.5263539957, 47.4086039612], [8.5264801642, 47.408662311], [8.526675475, 47.4087525368], [8.5269357515, 47.4088725258], [8.5269756947, 47.4088910033], [8.5273363384, 47.4090703401], [8.5271284141, 47.4092414596], [8.5270252294, 47.4093262478], [8.5269104384, 47.4094207698], [8.5268536341, 47.4094674311], [8.5266950775, 47.4095977064], [8.5265275255, 47.4097352441], [8.5263302613, 47.4098972677], [8.5263646241, 47.4099253596], [8.5264948366, 47.4100316957], [8.5265194451, 47.4100175219], [8.5267845818, 47.4102343788], [8.5269917625, 47.4104039273], [8.5270416717, 47.4104075051], [8.5271813236, 47.4105347019], [8.5271839651, 47.4105666993], [8.5275696708, 47.4108966287], [8.5279487572, 47.4112208624], [8.527957525, 47.4112284256], [8.5280247406, 47.4112488405], [8.5279596559, 47.4112606976], [8.5281121189, 47.4113907859], [8.5281593094, 47.4114311335], [8.5286812288, 47.4119394508], [8.529272323, 47.4125153853], [8.5297607835, 47.4129910736], [8.530191615, 47.4134107524], [8.530254504, 47.4134720443], [8.5317603734, 47.4132719266], [8.5317917618, 47.4133808302], [8.5318786491, 47.4136820621], [8.531980513, 47.4140350617], [8.5321077672, 47.4144764237], [8.5322350285, 47.4149179645], [8.5323625418, 47.4153594127], [8.5324900601, 47.41580042], [8.532610572, 47.4162169369]]], "type": "Polygon"}, "properties": {"kname": "Kreis 11", "knr": 11, "objectid": 21, "objid": "18", "qname": "Affoltern", "qnr": 111}, "type": "Feature"}, {"geometry": {"coordinates": [[[8.5279120043, 47.4326009981], [8.5276807679, 47.4326556104], [8.5276598104, 47.4326032772], [8.5276552965, 47.4325984084], [8.5263104104, 47.4311469495], [8.5263043414, 47.4311159739], [8.5263010336, 47.4311162749], [8.5262889914, 47.4311172876], [8.5261701495, 47.4309312203], [8.5260154066, 47.4305764652], [8.526042051, 47.4305706377], [8.5259215642, 47.4301542246], [8.5258412461, 47.4296086104], [8.5257650379, 47.4290701625], [8.5257676258, 47.428807567], [8.5257702536, 47.4285275209], [8.5258076039, 47.4279156846], [8.5257832001, 47.4278890101], [8.5258044083, 47.4275899898], [8.5258498685, 47.4274204578], [8.5258556659, 47.4273020295], [8.5254778883, 47.4268589672], [8.525477702, 47.4263872655], [8.5254677171, 47.4258439658], [8.5253711629, 47.4257689576], [8.5253841407, 47.4257683849], [8.5253814316, 47.4257330611], [8.5253763472, 47.4256651968], [8.5247142721, 47.4256836553], [8.5244860242, 47.4256899296], [8.5244766751, 47.4256345193], [8.5243965878, 47.4251562998], [8.524392041, 47.4251277385], [8.5243870545, 47.4250963938], [8.5248163862, 47.4250804934], [8.5247384547, 47.4247158154], [8.5243254712, 47.4247097492], [8.5242995038, 47.4245466541], [8.5242588506, 47.4239307297], [8.5242039634, 47.4239299858], [8.5237906853, 47.423923334], [8.5236886217, 47.4239216924], [8.5233474952, 47.4239167986], [8.5229442334, 47.4239124875], [8.5228149557, 47.4239100209], [8.5224576221, 47.4239032976], [8.5221892963, 47.4239001466], [8.521814434, 47.4238950338], [8.5216616262, 47.4238929491], [8.5211250679, 47.423884762], [8.5208206869, 47.4238807491], [8.5205907741, 47.4238777116], [8.5203798947, 47.4238747016], [8.5201422195, 47.4238712951], [8.5200588417, 47.423870105], [8.5197573033, 47.4238657299], [8.5195800442, 47.4238631695], [8.5195814572, 47.4238185143], [8.5195830207, 47.4237688654], [8.5197244887, 47.4233326601], [8.5197769286, 47.4232331351], [8.5199039336, 47.4230911842], [8.5201043389, 47.4229160748], [8.5201282264, 47.422891474], [8.520681329, 47.4225286651], [8.521075442, 47.4222595324], [8.5215520877, 47.4218531886], [8.5217549504, 47.4216045542], [8.5217724739, 47.4215538382], [8.5218440291, 47.4213460215], [8.521912473, 47.4211475797], [8.5219960452, 47.4209051006], [8.5220960283, 47.4206153329], [8.5221060398, 47.4205862752], [8.5220661235, 47.4205857498], [8.5224837714, 47.4198272333], [8.5229108832, 47.4190525072], [8.5232939911, 47.4183425692], [8.5236665548, 47.4176742855], [8.5238024662, 47.4174502749], [8.5238223408, 47.4174176164], [8.5238130567, 47.4174172538], [8.5238210674, 47.4173746323], [8.5238567444, 47.4173759965], [8.5239686187, 47.4171632571], [8.523994031, 47.4171149133], [8.5240801088, 47.4169681874], [8.5242749399, 47.4169549253], [8.5243903619, 47.4169475349], [8.5251752558, 47.4169078208], [8.5251989473, 47.4169063389], [8.5256427954, 47.4168791922], [8.5257878722, 47.4168702623], [8.5259332145, 47.4168614205], [8.52606082, 47.4168535631], [8.5260784219, 47.4168523991], [8.526223615, 47.4168427479], [8.5263688102, 47.4168331964], [8.5265137263, 47.4168235475], [8.5266587868, 47.4168138979], [8.5267227097, 47.4168096893], [8.5268036936, 47.416803799], [8.5269489988, 47.4167931573], [8.5270936295, 47.4167825209], [8.5271080534, 47.4167814856], [8.5272390063, 47.4167753863], [8.5273843803, 47.4167687003], [8.5275302945, 47.416761929], [8.527540092, 47.4167614769], [8.528031654, 47.4167365872], [8.5280680594, 47.416734706], [8.5281123105, 47.416734199], [8.5287151373, 47.4167267964], [8.5289846338, 47.4167305415], [8.5293639333, 47.4167508883], [8.5295828371, 47.4167626841], [8.5301424401, 47.4168066117], [8.5307105843, 47.4168604493], [8.5308531186, 47.4168775605], [8.5309740125, 47.4168920597], [8.5314942081, 47.416967045], [8.5319748936, 47.4170495437], [8.5321738057, 47.4162885157], [8.5324318017, 47.4163195715], [8.5324364589, 47.4163017803], [8.5326202419, 47.4162509275], [8.5333553045, 47.4163394673], [8.5359649164, 47.416653846], [8.5381853502, 47.4169212361], [8.5382168388, 47.4169251274], [8.5382711755, 47.4169316356], [8.5383246628, 47.4169354526], [8.5383153229, 47.4168580052], [8.5383179702, 47.4168585556], [8.5383206199, 47.4168590944], [8.5383232719, 47.4168596215], [8.5383259337, 47.4168601383], [8.5383285977, 47.4168606434], [8.5383312639, 47.4168611368], [8.5383685507, 47.4168653686], [8.5383717721, 47.4168657478], [8.5383749866, 47.4168661817], [8.5383781932, 47.4168666702], [8.5383813623, 47.4168672079], [8.5383845219, 47.4168677988], [8.5383876712, 47.4168684429], [8.5384888579, 47.41688985], [8.538503186, 47.4168925498], [8.5385175594, 47.4168949977], [8.5385319735, 47.4168971929], [8.5385465471, 47.4168991503], [8.538561153, 47.4169008494], [8.5385757868, 47.4169022897], [8.5393009919, 47.4169551088], [8.5396054482, 47.4169766194], [8.5400779672, 47.4170100108], [8.54068138, 47.4170529546], [8.5415652006, 47.4171155883], [8.5415935528, 47.4171160235], [8.5416219062, 47.4171156717], [8.5416502389, 47.4171145334], [8.5416783825, 47.4171126213], [8.5417064625, 47.417109933], [8.5417344577, 47.4171064706], [8.5418011202, 47.4170963618], [8.5418099817, 47.4170952346], [8.5418188572, 47.4170942235], [8.5418277451, 47.4170933285], [8.5418366819, 47.4170925469], [8.5418456282, 47.4170918827], [8.5418545825, 47.4170913361], [8.5418574931, 47.4170911815], [8.5418604043, 47.4170910398], [8.5418633162, 47.4170909111], [8.5418662305, 47.4170907953], [8.5418691453, 47.4170906925], [8.5418720605, 47.4170906027], [8.5418738326, 47.4170906643], [8.5418756027, 47.4170905622], [8.541877356, 47.4170902974], [8.5418790773, 47.417089872], [8.5418807521, 47.4170892897], [8.541882366, 47.4170885555], [8.5418839054, 47.4170876755], [8.5418853571, 47.4170866574], [8.5418865663, 47.4170856411], [8.541887688, 47.4170845289], [8.5418887145, 47.4170833283], [8.5418896389, 47.4170820473], [8.5418904549, 47.4170806948], [8.541891157, 47.4170792798], [8.5418917405, 47.4170778119], [8.5418920309, 47.4170752685], [8.5418922964, 47.4170727224], [8.5418925368, 47.4170701737], [8.5418927518, 47.4170676265], [8.5418929419, 47.4170650772], [8.5418931069, 47.4170625262], [8.5418421636, 47.4166917346], [8.5418005691, 47.416388956], [8.541770555, 47.4161704392], [8.541812256, 47.4161677026], [8.5417405442, 47.415648414], [8.5416954195, 47.4153190787], [8.5416174733, 47.4147540197], [8.541531812, 47.4141337247], [8.5415243099, 47.4140754724], [8.5426617694, 47.4140107703], [8.5441999847, 47.4139225778], [8.5449574184, 47.4138796533], [8.5453871882, 47.4138551638], [8.5454636672, 47.4138508785], [8.5457080317, 47.4138504346], [8.5465840917, 47.4138489629], [8.5466692959, 47.4138487759], [8.5467570662, 47.4138572795], [8.5470732401, 47.4138879688], [8.5473792944, 47.4139169552], [8.5473853256, 47.4138820866], [8.5473972933, 47.4138013771], [8.5474534286, 47.4134223911], [8.5474554057, 47.4134091494], [8.547671824, 47.4128747293], [8.5476741811, 47.4128689229], [8.5477039629, 47.4127954445], [8.5477360679, 47.4127972053], [8.5481377105, 47.4128483889], [8.5485441353, 47.4128810772], [8.5489525794, 47.41290242], [8.5493518628, 47.4129165634], [8.5497391307, 47.4129264223], [8.5501974947, 47.4129522452], [8.5503912501, 47.4129538081], [8.5508340643, 47.41295775], [8.5508624514, 47.4129850908], [8.5522969272, 47.4129978806], [8.5529594989, 47.413003465], [8.5536237968, 47.413009145], [8.5543274775, 47.4130154216], [8.5544678252, 47.4130167564], [8.5545384962, 47.4130174315], [8.5546611116, 47.4130186764], [8.5557138792, 47.4130244053], [8.5570445596, 47.4130359264], [8.5577058628, 47.4130421795], [8.558434571, 47.4130488634], [8.5588621276, 47.4130524636], [8.5588617129, 47.4130888167], [8.5586414325, 47.4130868864], [8.5586846649, 47.4131142712], [8.5588504995, 47.4143680079], [8.5588547424, 47.4144248246], [8.5589113313, 47.4144256245], [8.558954871, 47.414453636], [8.5590163659, 47.4144545691], [8.5590903153, 47.4144559198], [8.5591642527, 47.4144578202], [8.5592381739, 47.4144602703], [8.559312004, 47.4144632668], [8.5593858098, 47.4144668116], [8.5594595873, 47.4144709045], [8.5594357691, 47.4146501542], [8.5594417435, 47.4146505158], [8.5594477176, 47.4146508806], [8.5594536916, 47.4146512484], [8.5594596647, 47.4146516193], [8.5594656377, 47.4146519932], [8.5594716104, 47.4146523703], [8.559536236, 47.4146567152], [8.5596008303, 47.4146615036], [8.5596653901, 47.4146667353], [8.5597297835, 47.4146723983], [8.5597941366, 47.4146785023], [8.5598584463, 47.414685047], [8.5599282588, 47.4146926071], [8.5599980121, 47.4147006946], [8.5600677023, 47.4147093089], [8.560137099, 47.4147184191], [8.5602064251, 47.4147280517], [8.5602756766, 47.4147382062], [8.5603449497, 47.4147489416], [8.5604141376, 47.4147602124], [8.5604832364, 47.4147720176], [8.5605519365, 47.4147843009], [8.5606205399, 47.4147971126], [8.5606890428, 47.414810452], [8.5607371451, 47.4148201595], [8.5607851929, 47.4148301336], [8.5608331846, 47.4148403739], [8.5608809365, 47.4148508396], [8.5609286299, 47.4148615688], [8.5609762632, 47.4148725612], [8.561004692, 47.4148792649], [8.5610330992, 47.4148860595], [8.5610614844, 47.4148929451], [8.5610897786, 47.4148999046], [8.5611180505, 47.4149069544], [8.5611462997, 47.4149140946], [8.5612315539, 47.4149362292], [8.5613165717, 47.4149592556], [8.5614013436, 47.4149831712], [8.5614851104, 47.4150077491], [8.5615686176, 47.4150331953], [8.561651856, 47.4150595071], [8.5617521163, 47.4150925326], [8.5618519245, 47.4151269003], [8.5619512626, 47.4151626037], [8.562048812, 47.4151991394], [8.5621458693, 47.4152369633], [8.5622424173, 47.4152760687], [8.5623102169, 47.4153041914], [8.5623779831, 47.4153323945], [8.5624457158, 47.4153606781], [8.5625133294, 47.4153890063], [8.5625809094, 47.4154174147], [8.5626484557, 47.4154459033], [8.5626627234, 47.4154518894], [8.5626769897, 47.4154578791], [8.5626912545, 47.4154638724], [8.5627055139, 47.4154698677], [8.5627197718, 47.4154758666], [8.5627340281, 47.4154818691], [8.5628155835, 47.4155164995], [8.5628970885, 47.4155512485], [8.5629785428, 47.4155861159], [8.5630598194, 47.4156210469], [8.5631410452, 47.4156560959], [8.5632222201, 47.4156912626], [8.5629081078, 47.4162833498], [8.5628474037, 47.4163977727], [8.5628299047, 47.4164307658], [8.5623573676, 47.4163197854], [8.5619455326, 47.4170808733], [8.5614682238, 47.4179629394], [8.5614549293, 47.4179886144], [8.5614271177, 47.4180423242], [8.5613423846, 47.4182059396], [8.5613012792, 47.4182853154], [8.5609411373, 47.4181993492], [8.560831742, 47.4181732381], [8.5606241888, 47.4182554984], [8.5563721246, 47.4199406914], [8.5559658359, 47.4201017001], [8.5542029899, 47.4208002672], [8.5542262397, 47.4208257317], [8.554228939, 47.420828683], [8.5545088754, 47.4211351561], [8.5545621996, 47.4211935408], [8.5545540539, 47.4212064374], [8.5546850147, 47.4213405206], [8.5547194033, 47.4213754426], [8.5547537033, 47.4214104515], [8.5547879145, 47.4214455473], [8.5548219422, 47.4214806321], [8.5548558812, 47.4215158028], [8.5548897313, 47.4215510591], [8.5549234134, 47.4215863076], [8.5549570056, 47.4216216418], [8.5549905077, 47.4216570615], [8.5550238277, 47.4216924686], [8.5550570576, 47.4217279602], [8.5550901973, 47.4217635362], [8.555853387, 47.4225914173], [8.5559600862, 47.4227071587], [8.5563675838, 47.42314919], [8.5567670448, 47.4235824733], [8.5572005023, 47.424052647], [8.5572395387, 47.4240949867], [8.5569097605, 47.4242412977], [8.557370772, 47.4247198312], [8.556985927, 47.4249018457], [8.5577626852, 47.4254789373], [8.5578423701, 47.4255381358], [8.5576537247, 47.4255863491], [8.5576426377, 47.4255916735], [8.5575876236, 47.4256278991], [8.5575421021, 47.4256578703], [8.5570616498, 47.4260702552], [8.5569783652, 47.4262005172], [8.5569271008, 47.4261957059], [8.5569279062, 47.426259302], [8.5568520127, 47.4262367389], [8.5565186249, 47.4270402039], [8.5562998856, 47.4275673388], [8.5561075846, 47.4280332586], [8.5560459065, 47.4282509044], [8.5560383773, 47.4282774225], [8.5559350108, 47.4286421339], [8.555823474, 47.4290356722], [8.5557367407, 47.42934171], [8.5556987662, 47.4294756528], [8.5556631115, 47.4296014588], [8.5556517084, 47.4296416777], [8.5556068476, 47.4297999735], [8.5555470524, 47.4300109534], [8.55553323, 47.4300597049], [8.5555214929, 47.4301011315], [8.5554645114, 47.4303021986], [8.555388979, 47.4305686677], [8.555373071, 47.4306248062], [8.5553629254, 47.4306605964], [8.5550757221, 47.4306692983], [8.5543125154, 47.43076714], [8.5535477416, 47.4309048576], [8.5533417838, 47.4309117284], [8.5527620859, 47.4309310803], [8.5525015929, 47.4309677268], [8.5520889184, 47.431025781], [8.5520017797, 47.4310380437], [8.5513773379, 47.4310864155], [8.551166208, 47.4310615618], [8.5509931504, 47.4310215358], [8.5508401893, 47.4310386324], [8.5506596075, 47.4310984148], [8.550297246, 47.4312183851], [8.5501062626, 47.4312816127], [8.5500669463, 47.4312264735], [8.5499468123, 47.4312660287], [8.548869313, 47.4313752394], [8.54879993, 47.4313842487], [8.5487306536, 47.4313940442], [8.5486614928, 47.4314046247], [8.5485928676, 47.4314159189], [8.5485243742, 47.4314279859], [8.5484560211, 47.4314408243], [8.5483885317, 47.4314542957], [8.5483212037, 47.4314685518], [8.5482540463, 47.4314835907], [8.5481876282, 47.4314992748], [8.5481213955, 47.4315157246], [8.5480553572, 47.4315329378], [8.5469947638, 47.4318012243], [8.5467503644, 47.4318669471], [8.5460816115, 47.4320645538], [8.5458411069, 47.4321391865], [8.545606376, 47.4322237029], [8.5453813513, 47.4323185861], [8.5451599782, 47.4324176895], [8.5449281366, 47.4325042006], [8.5445981326, 47.432615029], [8.5445265418, 47.4324993195], [8.5439027878, 47.4326622653], [8.5431207476, 47.4328828519], [8.5431539557, 47.4328209731], [8.5428570853, 47.4328889526], [8.5431590228, 47.4323263464], [8.5433009157, 47.4320619327], [8.5436106302, 47.4314848146], [8.5436389374, 47.4314320674], [8.543065982, 47.4315073728], [8.5430029291, 47.4315159724], [8.5429200347, 47.4315272702], [8.5428875432, 47.4315317011], [8.5424525823, 47.4315909959], [8.5424165348, 47.4315959094], [8.5419555316, 47.4316504236], [8.5417733231, 47.4316739766], [8.5403428399, 47.4318588795], [8.54021355, 47.4317934504], [8.5401127547, 47.4310951443], [8.5399596576, 47.4311795282], [8.5397730881, 47.4312349789], [8.5397603706, 47.431238537], [8.5397475885, 47.4312418554], [8.5397347463, 47.4312449329], [8.5397216702, 47.4312478058], [8.5397085418, 47.4312504289], [8.5396953658, 47.4312528013], [8.5396820442, 47.4312549538], [8.539668686, 47.4312568652], [8.5396552954, 47.431258535], [8.5396417805, 47.4312599719], [8.5396282417, 47.4312611626], [8.5396146835, 47.4312621067], [8.5395388289, 47.4312670475], [8.5388749488, 47.4313014448], [8.5378227235, 47.431364818], [8.5374079656, 47.4313987158], [8.5371604105, 47.4314475826], [8.5370296299, 47.4315035782], [8.5366965455, 47.4316462015], [8.5363225541, 47.4318063296], [8.5362763379, 47.4318169965], [8.5360734638, 47.4318638177], [8.5358277925, 47.4318819729], [8.5358288016, 47.4318409463], [8.5357245469, 47.4318379516], [8.5356582273, 47.4318360541], [8.5356236083, 47.4318350602], [8.5352223073, 47.43187817], [8.534686134, 47.4320001753], [8.5344101213, 47.4321265565], [8.5341885656, 47.4323037905], [8.5341259805, 47.4323538567], [8.5339810543, 47.4324344779], [8.5337511672, 47.4325092464], [8.5336639983, 47.4325049456], [8.533238755, 47.432316563], [8.5332176506, 47.4323076624], [8.5331961291, 47.4322998241], [8.5331742439, 47.4322930676], [8.5331510788, 47.432287189], [8.5331276394, 47.4322825223], [8.5331039892, 47.4322790802], [8.5330798146, 47.4322766499], [8.5330555525, 47.4322753555], [8.5330312565, 47.4322751999], [8.5330070469, 47.4322761793], [8.5329829095, 47.4322782894], [8.5329588972, 47.4322815255], [8.532649147, 47.4323334457], [8.5324605389, 47.4323650689], [8.5320141897, 47.4324398871], [8.5316375792, 47.4325030156], [8.530729788, 47.4326551709], [8.5307053169, 47.4326581201], [8.530680682, 47.4326589302], [8.53065607, 47.4326575951], [8.5306323322, 47.4326542483], [8.5306089625, 47.4326489057], [8.5305861284, 47.4326416058], [8.530573905, 47.4326370521], [8.5305620857, 47.4326315341], [8.5305507464, 47.432625087], [8.5305399599, 47.4326177524], [8.5305297955, 47.4326095774], [8.5305195679, 47.4325998401], [8.530510223, 47.4325892527], [8.5305018313, 47.4325778949], [8.5304944559, 47.4325658523], [8.5302795489, 47.4321039471], [8.5303105704, 47.4320640306], [8.5301694093, 47.4320938879], [8.5300154584, 47.4321264564], [8.5292759296, 47.432281166], [8.5291509225, 47.4323095286], [8.5290272996, 47.4323375821], [8.5279120043, 47.4326009981]]], "type": "Polygon"}, "properties": {"kname": "Kreis 11", "knr": 11, "objectid": 27, "objid": "8", "qname": "Seebach", "qnr": 119}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    var color_map_1c0c054ade1a4bb821c92f9147baefc6 = {};
+
+    
+    color_map_1c0c054ade1a4bb821c92f9147baefc6.color = d3.scale.threshold()
+              .domain([11.0, 11.045290581162325, 11.09058116232465, 11.135871743486973, 11.181162324649298, 11.226452905811623, 11.271743486973948, 11.317034068136273, 11.362324649298596, 11.407615230460921, 11.452905811623246, 11.498196392785571, 11.543486973947896, 11.588777555110221, 11.634068136272544, 11.67935871743487, 11.724649298597194, 11.76993987975952, 11.815230460921844, 11.860521042084168, 11.905811623246493, 11.951102204408818, 11.996392785571143, 12.041683366733468, 12.086973947895792, 12.132264529058116, 12.17755511022044, 12.222845691382766, 12.26813627254509, 12.313426853707416, 12.358717434869739, 12.404008016032064, 12.449298597194389, 12.494589178356714, 12.539879759519039, 12.585170340681362, 12.630460921843687, 12.675751503006012, 12.721042084168337, 12.766332665330662, 12.811623246492985, 12.85691382765531, 12.902204408817635, 12.94749498997996, 12.992785571142285, 13.03807615230461, 13.083366733466935, 13.128657314629258, 13.173947895791583, 13.219238476953908, 13.264529058116231, 13.309819639278558, 13.355110220440881, 13.400400801603206, 13.445691382765531, 13.490981963927856, 13.536272545090181, 13.581563126252505, 13.62685370741483, 13.672144288577154, 13.71743486973948, 13.762725450901804, 13.808016032064128, 13.853306613226453, 13.898597194388778, 13.943887775551103, 13.989178356713428, 14.03446893787575, 14.079759519038078, 14.1250501002004, 14.170340681362726, 14.21563126252505, 14.260921843687374, 14.3062124248497, 14.351503006012024, 14.396793587174349, 14.442084168336674, 14.487374749498997, 14.532665330661324, 14.577955911823647, 14.623246492985972, 14.668537074148297, 14.713827655310622, 14.759118236472947, 14.80440881763527, 14.849699398797595, 14.89498997995992, 14.940280561122245, 14.98557114228457, 15.030861723446893, 15.07615230460922, 15.121442885771543, 15.166733466933868, 15.212024048096193, 15.257314629258516, 15.302605210420841, 15.347895791583166, 15.393186372745491, 15.438476953907816, 15.48376753507014, 15.529058116232465, 15.57434869739479, 15.619639278557115, 15.66492985971944, 15.710220440881763, 15.75551102204409, 15.800801603206413, 15.846092184368738, 15.891382765531063, 15.936673346693386, 15.981963927855713, 16.027254509018036, 16.072545090180363, 16.117835671342686, 16.16312625250501, 16.208416833667336, 16.25370741482966, 16.298997995991986, 16.34428857715431, 16.389579158316632, 16.43486973947896, 16.480160320641282, 16.52545090180361, 16.570741482965932, 16.616032064128255, 16.661322645290582, 16.706613226452905, 16.751903807615232, 16.797194388777555, 16.842484969939882, 16.887775551102205, 16.93306613226453, 16.978356713426855, 17.02364729458918, 17.0689378757515, 17.11422845691383, 17.159519038076155, 17.20480961923848, 17.2501002004008, 17.29539078156313, 17.34068136272545, 17.385971943887775, 17.4312625250501, 17.476553106212425, 17.521843687374748, 17.567134268537075, 17.6124248496994, 17.657715430861725, 17.703006012024048, 17.748296593186375, 17.793587174348698, 17.83887775551102, 17.884168336673348, 17.92945891783567, 17.974749498997994, 18.02004008016032, 18.065330661322648, 18.11062124248497, 18.155911823647294, 18.20120240480962, 18.246492985971944, 18.291783567134267, 18.337074148296594, 18.382364729458917, 18.427655310621244, 18.472945891783567, 18.518236472945894, 18.563527054108217, 18.60881763527054, 18.654108216432867, 18.69939879759519, 18.744689378757517, 18.78997995991984, 18.835270541082163, 18.88056112224449, 18.925851703406813, 18.97114228456914, 19.016432865731463, 19.061723446893787, 19.107014028056113, 19.15230460921844, 19.19759519038076, 19.242885771543087, 19.288176352705413, 19.333466933867737, 19.37875751503006, 19.424048096192386, 19.46933867735471, 19.514629258517033, 19.55991983967936, 19.605210420841683, 19.65050100200401, 19.695791583166333, 19.74108216432866, 19.786372745490983, 19.831663326653306, 19.876953907815633, 19.92224448897796, 19.96753507014028, 20.012825651302606, 20.05811623246493, 20.103406813627256, 20.14869739478958, 20.193987975951906, 20.23927855711423, 20.284569138276552, 20.32985971943888, 20.375150300601206, 20.420440881763525, 20.465731462925852, 20.51102204408818, 20.556312625250502, 20.601603206412825, 20.646893787575152, 20.692184368737475, 20.7374749498998, 20.782765531062125, 20.828056112224452, 20.87334669338677, 20.9186372745491, 20.963927855711425, 21.00921843687375, 21.05450901803607, 21.0997995991984, 21.145090180360725, 21.190380761523045, 21.23567134268537, 21.2809619238477, 21.326252505010018, 21.371543086172345, 21.41683366733467, 21.462124248496995, 21.507414829659318, 21.552705410821645, 21.59799599198397, 21.64328657314629, 21.688577154308618, 21.733867735470945, 21.779158316633264, 21.82444889779559, 21.869739478957918, 21.91503006012024, 21.960320641282564, 22.00561122244489, 22.050901803607218, 22.096192384769537, 22.141482965931864, 22.18677354709419, 22.232064128256514, 22.277354709418837, 22.322645290581164, 22.367935871743487, 22.41322645290581, 22.458517034068137, 22.503807615230464, 22.549098196392784, 22.59438877755511, 22.639679358717437, 22.68496993987976, 22.730260521042084, 22.77555110220441, 22.820841683366734, 22.86613226452906, 22.911422845691384, 22.95671342685371, 23.00200400801603, 23.047294589178357, 23.092585170340683, 23.137875751503007, 23.18316633266533, 23.228456913827657, 23.27374749498998, 23.319038076152307, 23.36432865731463, 23.409619238476957, 23.454909819639276, 23.500200400801603, 23.54549098196393, 23.590781563126253, 23.636072144288576, 23.681362725450903, 23.72665330661323, 23.771943887775553, 23.817234468937876, 23.862525050100203, 23.907815631262523, 23.95310621242485, 23.998396793587176, 24.0436873747495, 24.088977955911822, 24.13426853707415, 24.179559118236476, 24.2248496993988, 24.270140280561122, 24.31543086172345, 24.360721442885772, 24.406012024048096, 24.451302605210422, 24.496593186372746, 24.54188376753507, 24.587174348697395, 24.632464929859722, 24.677755511022045, 24.72304609218437, 24.768336673346695, 24.81362725450902, 24.858917835671342, 24.90420841683367, 24.949498997995992, 24.99478957915832, 25.04008016032064, 25.08537074148297, 25.13066132264529, 25.175951903807615, 25.22124248496994, 25.266533066132265, 25.311823647294588, 25.357114228456915, 25.402404809619238, 25.447695390781565, 25.492985971943888, 25.538276553106215, 25.583567134268538, 25.62885771543086, 25.674148296593188, 25.719438877755515, 25.764729458917834, 25.81002004008016, 25.855310621242488, 25.90060120240481, 25.945891783567134, 25.99118236472946, 26.036472945891784, 26.081763527054107, 26.127054108216434, 26.17234468937876, 26.21763527054108, 26.262925851703407, 26.308216432865734, 26.353507014028057, 26.39879759519038, 26.444088176352707, 26.489378757515034, 26.534669338677354, 26.57995991983968, 26.625250501002007, 26.670541082164327, 26.715831663326654, 26.76112224448898, 26.806412825651304, 26.851703406813627, 26.896993987975954, 26.94228456913828, 26.9875751503006, 27.032865731462927, 27.078156312625254, 27.123446893787577, 27.1687374749499, 27.214028056112223, 27.25931863727455, 27.304609218436877, 27.3498997995992, 27.395190380761523, 27.44048096192385, 27.485771543086173, 27.531062124248496, 27.576352705410823, 27.621643286573146, 27.666933867735473, 27.712224448897796, 27.75751503006012, 27.802805611222446, 27.84809619238477, 27.893386773547096, 27.93867735470942, 27.983967935871743, 28.02925851703407, 28.074549098196393, 28.11983967935872, 28.165130260521043, 28.210420841683366, 28.255711422845692, 28.30100200400802, 28.346292585170342, 28.39158316633267, 28.43687374749499, 28.482164328657316, 28.527454909819642, 28.572745490981966, 28.618036072144292, 28.663326653306612, 28.70861723446894, 28.753907815631266, 28.79919839679359, 28.844488977955915, 28.889779559118235, 28.935070140280562, 28.98036072144289, 29.025651302605212, 29.07094188376754, 29.11623246492986, 29.161523046092185, 29.206813627254512, 29.252104208416835, 29.29739478957916, 29.34268537074148, 29.387975951903808, 29.433266533066135, 29.478557114228458, 29.523847695390785, 29.569138276553105, 29.61442885771543, 29.659719438877758, 29.70501002004008, 29.750300601202408, 29.795591182364728, 29.840881763527054, 29.88617234468938, 29.931462925851704, 29.97675350701403, 30.022044088176354, 30.067334669338678, 30.112625250501004, 30.157915831663328, 30.203206412825654, 30.248496993987978, 30.2937875751503, 30.339078156312627, 30.38436873747495, 30.429659318637277, 30.4749498997996, 30.520240480961924, 30.56553106212425, 30.610821643286574, 30.6561122244489, 30.701402805611224, 30.746693386773547, 30.791983967935874, 30.837274549098197, 30.882565130260524, 30.927855711422847, 30.97314629258517, 31.018436873747497, 31.06372745490982, 31.109018036072147, 31.15430861723447, 31.199599198396793, 31.24488977955912, 31.290180360721447, 31.33547094188377, 31.380761523046093, 31.426052104208416, 31.471342685370743, 31.51663326653307, 31.561923847695393, 31.607214428857716, 31.65250501002004, 31.697795591182366, 31.743086172344693, 31.788376753507016, 31.83366733466934, 31.878957915831663, 31.92424849699399, 31.969539078156316, 32.014829659318636, 32.06012024048096, 32.10541082164329, 32.15070140280561, 32.19599198396794, 32.24128256513026, 32.28657314629258, 32.33186372745491, 32.377154308617236, 32.42244488977956, 32.46773547094189, 32.51302605210421, 32.55831663326653, 32.60360721442886, 32.64889779559118, 32.69418837675351, 32.739478957915836, 32.784769539078155, 32.83006012024048, 32.87535070140281, 32.92064128256513, 32.965931863727455, 33.01122244488978, 33.0565130260521, 33.101803607214435, 33.147094188376755, 33.192384769539075, 33.23767535070141, 33.28296593186373, 33.328256513026055, 33.37354709418838, 33.4188376753507, 33.46412825651303, 33.509418837675355, 33.554709418837675, 33.6])
+              .range(['#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#f7f7f7ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#d9d9d9ff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#bdbdbdff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#969696ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#636363ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff', '#252525ff']);
+    
+
+    color_map_1c0c054ade1a4bb821c92f9147baefc6.x = d3.scale.linear()
+              .domain([11.0, 33.6])
+              .range([0, 450 - 50]);
+
+    color_map_1c0c054ade1a4bb821c92f9147baefc6.legend = L.control({position: 'topright'});
+    color_map_1c0c054ade1a4bb821c92f9147baefc6.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_1c0c054ade1a4bb821c92f9147baefc6.legend.addTo(map_23823397c0ca5260ef3be8c4ecea87fd);
+
+    color_map_1c0c054ade1a4bb821c92f9147baefc6.xAxis = d3.svg.axis()
+        .scale(color_map_1c0c054ade1a4bb821c92f9147baefc6.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([11.0, 14.766666666666667, 18.533333333333335, 22.3, 26.06666666666667, 29.833333333333336, 33.6]);
+
+    color_map_1c0c054ade1a4bb821c92f9147baefc6.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_1c0c054ade1a4bb821c92f9147baefc6.g = color_map_1c0c054ade1a4bb821c92f9147baefc6.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_1c0c054ade1a4bb821c92f9147baefc6.g.selectAll("rect")
+        .data(color_map_1c0c054ade1a4bb821c92f9147baefc6.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_1c0c054ade1a4bb821c92f9147baefc6.x(color_map_1c0c054ade1a4bb821c92f9147baefc6.color.domain()[i - 1]) : color_map_1c0c054ade1a4bb821c92f9147baefc6.x.range()[0],
+            x1: i < color_map_1c0c054ade1a4bb821c92f9147baefc6.color.domain().length ? color_map_1c0c054ade1a4bb821c92f9147baefc6.x(color_map_1c0c054ade1a4bb821c92f9147baefc6.color.domain()[i]) : color_map_1c0c054ade1a4bb821c92f9147baefc6.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_1c0c054ade1a4bb821c92f9147baefc6.g.call(color_map_1c0c054ade1a4bb821c92f9147baefc6.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text("Number of Accidents");
+    
+            var layer_control_85bade6e2931192481e326f214960445 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_8b510b6ec911fff720ba6f216bad1459,
+                },
+                overlays :  {
+                    "Accident Clusters" : marker_cluster_7f3a50aa9afc6c86b239826d6eb29f88,
+                    "Number of Accidents" : choropleth_a35e976dc42db1e8b20fce0b98979db7,
+                },
+            };
+            L.control.layers(
+                layer_control_85bade6e2931192481e326f214960445.base_layers,
+                layer_control_85bade6e2931192481e326f214960445.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_23823397c0ca5260ef3be8c4ecea87fd);
+        
+</script>
+</html>
